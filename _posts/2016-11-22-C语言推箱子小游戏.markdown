@@ -83,7 +83,7 @@ author: dawsonlee
 
 接下我们要把TXT文件的读取矩阵的功能，写在一个readmap()函数中，实现功能的模块化。并加多一项功能，就是查找出，MAN的位置。
 
-{% highlight html %}
+{% highlight ruby %}
 //map[13][16]是形参，其中&man_i表是的是man_i的引用，引用传递的意义在于：传入参数会因函数中的操作而改变
 int readmap(int map[13][16], int &man_i, int &man_j)
 {
