@@ -4,13 +4,13 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-#  技能
->  ##  熟悉
+##  技能
+>  ###  熟悉
 >  +  Java
 >  +  JavaEE(EJB规范)
 >  +  面向对象的分析和设计
 >   
->  ##  了解
+>  ###  了解
 >  +  数据结构  
 >  +  算法
 >  +  C / C++
