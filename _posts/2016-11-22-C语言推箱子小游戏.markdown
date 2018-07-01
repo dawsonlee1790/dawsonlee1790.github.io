@@ -17,14 +17,14 @@ author: dawsonlee
 
 将整个画面分成13*16的矩阵，每个元素对应者一个小矩形。然后用0代表黑格，1代表白墙，2代表蓝格……，这样就有了整幅图像的信息。然后移动就可以想象成，改变矩阵的坐标信息，形成一个新的矩阵，再重绘。这就是推箱子的基本原理。
 
-    #define BLACK	        0   //黑格:用于填充图像
-    #define WHITEWALL	    1	//白墙:用于阻挡主角移动
-    #define BLUEWALL	    2	//蓝格:用于表示可移动空间
-    #define BALL	        3	//点	:用于指定箱子放置位置
-    #define BOX	            4	//箱子:用于表示初始箱子位置
-    #define REDBOX	        5	//变色的箱子:用于表示这个点位置已经放置箱子
-    #define MAN	            6	//主角:用于表示主角位置
-    #define MANBALL         7   //主角站在点上
+	#define BLACK			0	//黑格:用于填充图像
+	#define WHITEWALL		1	//白墙:用于阻挡主角移动
+	#define BLUEWALL		2	//蓝格:用于表示可移动空间
+	#define BALL			3	//点:用于指定箱子放置位置
+	#define BOX				4	//箱子:用于表示初始箱子位置
+	#define REDBOX			5	//变色的箱子:用于表示这个点位置已经放置箱子
+	#define MAN				6	//主角:用于表示主角位置
+	#define MANBALL			7	//主角站在点上
 
 ###  步骤
 ###  1.编译环境：VS2015
