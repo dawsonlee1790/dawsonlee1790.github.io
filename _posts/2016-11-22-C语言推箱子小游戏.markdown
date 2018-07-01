@@ -109,21 +109,19 @@ author: dawsonlee
 
 5.  接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
-	#include<stdio.h>
-	#include<stdlib.h>
-	#include<graphics.h>
-
-	#define BLACK	      0 //黑格:用于填充图像
-	#define WHITEWALL     1	//白墙:用于阻挡主角移动
-	#define BLUEWALL      2	//蓝格:用于表示可移动空间
-	#define BALL	      3	//点	:用于指定箱子放置位置
-	#define BOX	      4	//箱子:用于表示初始箱子位置
-	#define REDBOX	      5	//变色的箱子:用于表示这个点位置已经放置箱子
-	#define MAN	      6	//主角:用于表示主角位置
-	#define MANBALL       7 //主角站在点上
-
-	int main()
-	{
+	    #include<stdio.h>
+		#include<stdlib.h>
+		#include<graphics.h>
+		#define BLACK	      0 //黑格:用于填充图像
+		#define WHITEWALL     1	//白墙:用于阻挡主角移动
+		#define BLUEWALL      2	//蓝格:用于表示可移动空间
+		#define BALL	      3	//点	:用于指定箱子放置位置
+		#define BOX	      4	//箱子:用于表示初始箱子位置
+		#define REDBOX	      5	//变色的箱子:用于表示这个点位置已经放置箱子
+		#define MAN	      6	//主角:用于表示主角位置
+		#define MANBALL       7 //主角站在点上
+		int main()
+		{
 		int map[13][16];//创建一个map数组用来存储矩阵信息
 		int man_i, man_j;//用来存储人物的位置信息
 		int readmap(int map[13][16], int &man_x, int &man_y);//声明
@@ -140,11 +138,10 @@ author: dawsonlee
 		getch();//等待一个键盘输入，如果没有的话，窗口会看不到，因为程序运行结束就会关闭窗口。生成关闭就转瞬即逝
 		closegraph();//关闭窗口
 		return 0;
-	}
-
-	//map[13][16]是形参，其中&man_i表是的是man_i的引用，引用传递的意义在于：传入参数会因函数中的操作而改变
-	int readmap(int map[13][16], int &man_i, int &man_j)
-	{
+		}
+		//map[13][16]是形参，其中&man_i表是的是man_i的引用，引用传递的意义在于：传入参数会因函数中的操作而改变
+		int readmap(int map[13][16], int &man_i, int &man_j)
+		{
 		FILE *fp = fopen("MAP.txt", "rb");//以只读形式打开文件MAP.txt
 		if (!fp) {
 			printf("打开文件失败，文件位置你可能放错了\n");
@@ -164,65 +161,63 @@ author: dawsonlee
 				}
 			}
 		return 0;
-	}
-
-
-	/*
-	下面是在图形库绘制小矩形中图像的功能模块
-	这部分涉及C++中的知识，C语言新手不必过多纠结不懂的东西。但要知道，创建的源文件要是cpp格式的
-	*/
-	void darm(int a, int ii, int jj)
-	{
-		PIMAGE img;//声明
-		img = newimage();//实例化
-		switch (a)
-		{
-		case BLACK:break;
-		case WHITEWALL:
-		{
-			getimage(img, "pic/墙.jpg");//getimage()和putimage请翻阅ege图形库帮助手册。
-			putimage(jj * 50, ii * 50, img);//在ii行jj列绘制一个50*50像素的矩形图像
-			break;
 		}
-		case BLUEWALL:
+		/*
+		下面是在图形库绘制小矩形中图像的功能模块
+		这部分涉及C++中的知识，C语言新手不必过多纠结不懂的东西。但要知道，创建的源文件要是cpp格式的
+		*/
+		void darm(int a, int ii, int jj)
 		{
-			getimage(img, "pic/路.jpg");
-			putimage(jj * 50, ii * 50, img);
-			break;
+			PIMAGE img;//声明
+			img = newimage();//实例化
+			switch (a)
+			{
+			case BLACK:break;
+			case WHITEWALL:
+			{
+				getimage(img, "pic/墙.jpg");//getimage()和putimage请翻阅ege图形库帮助手册。
+				putimage(jj * 50, ii * 50, img);//在ii行jj列绘制一个50*50像素的矩形图像
+				break;
+			}
+			case BLUEWALL:
+			{
+				getimage(img, "pic/路.jpg");
+				putimage(jj * 50, ii * 50, img);
+				break;
+			}
+			case BALL:
+			{
+				getimage(img, "pic/目的地.png");
+				putimage(jj * 50, ii * 50, img);
+				break;
+			}
+			case BOX:
+			{
+				getimage(img, "pic/箱子.png");
+				putimage(jj * 50, ii * 50, img);
+				break;
+			}
+			case MAN:
+			{
+				getimage(img, "pic/人.jpg");
+				putimage(jj * 50, ii * 50, img);
+				break;
+			}
+			case MANBALL:
+			{
+				getimage(img, "pic/人.jpg");
+				putimage(jj * 50, ii * 50, img);
+				break;
+			}
+			case REDBOX:
+			{
+				getimage(img, "pic/红箱子.png");
+				putimage(jj * 50, ii * 50, img);
+				break;
+			}
+			}
+			ege::delimage(img);
 		}
-		case BALL:
-		{
-			getimage(img, "pic/目的地.png");
-			putimage(jj * 50, ii * 50, img);
-			break;
-		}
-		case BOX:
-		{
-			getimage(img, "pic/箱子.png");
-			putimage(jj * 50, ii * 50, img);
-			break;
-		}
-		case MAN:
-		{
-			getimage(img, "pic/人.jpg");
-			putimage(jj * 50, ii * 50, img);
-			break;
-		}
-		case MANBALL:
-		{
-			getimage(img, "pic/人.jpg");
-			putimage(jj * 50, ii * 50, img);
-			break;
-		}
-		case REDBOX:
-		{
-			getimage(img, "pic/红箱子.png");
-			putimage(jj * 50, ii * 50, img);
-			break;
-		}
-		}
-		ege::delimage(img);
-	}
 
 6.  实现图像的绘制以后那我们就应该实现图像的移动了。
 
