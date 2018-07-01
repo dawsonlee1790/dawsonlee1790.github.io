@@ -109,8 +109,7 @@ author: dawsonlee
 
 ###  5.接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
-<pre><code>
-/**/
+<pre><code>/**/
 #include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
