@@ -109,7 +109,7 @@ author: dawsonlee
 
 ###  5.接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
-{% highlight ruby %}
+<pre><code>
 #include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
@@ -225,14 +225,14 @@ void darm(int a, int ii, int jj)
 	ege::delimage(img);
 }
 
-{% endhighlight %}
+</code></pre>
 
 ###  6.实现图像的绘制以后那我们就应该实现图像的移动了。
 首先将所有的情况列举出来并存入数组table[i][0]中,将改变后的第一个格子信息存在table[i][1]中，第二个格子信息存在table[i][2]中，第三个格子信息存在table[i][3]中。
 
 然后就可以开始写move()函数，实现MAN的移动。move()函数源代码
 
-{% highlight ruby %}
+<pre><code>
 /*
 传入函数的参数 get表示用户输入的键盘按键，传入实时数组map的信息，传入实时MAN的位置信息man_i，man_j。
 */
@@ -372,11 +372,11 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 		break;
 	}
 }
-{% endhighlight %}
+</code></pre>
 
 写好move()函数后，我们就可以实现推箱子的功能了。整合后的源代码
 
-{% highlight ruby %}
+<pre><code>
 #include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
@@ -643,11 +643,11 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 		break;
 	}
 }
-{% endhighlight %}
+</code></pre>
 
 最后，我们给窗口载入一张完美的背景图片，至此就可以实现完整推箱子小游戏了。最后整合的代码就是
 
-{% highlight ruby %}
+<pre><code>
 /*
 作者:DawsonLee
 Email:dawsonlee1790@foxmail.com
@@ -925,7 +925,7 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 		break;
 	}
 }
-{% endhighlight %}
+</code></pre>
 
 ### 8.附上整个工程项目的文件
 ### 9.通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
