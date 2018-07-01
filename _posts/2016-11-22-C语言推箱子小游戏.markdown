@@ -109,8 +109,7 @@ author: dawsonlee
 
 ###  5.接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
-<pre><code>
-#include<stdio.h>
+<pre><code>#include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
 
@@ -232,8 +231,7 @@ void darm(int a, int ii, int jj)
 
 然后就可以开始写move()函数，实现MAN的移动。move()函数源代码
 
-<pre><code>
-/*
+<pre><code>/*
 传入函数的参数 get表示用户输入的键盘按键，传入实时数组map的信息，传入实时MAN的位置信息man_i，man_j。
 */
 void move(char get, int map[13][16], int &man_i, int &man_j)
@@ -376,8 +374,7 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 
 写好move()函数后，我们就可以实现推箱子的功能了。整合后的源代码
 
-<pre><code>
-#include<stdio.h>
+<pre><code>#include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
 
@@ -647,8 +644,7 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 
 最后，我们给窗口载入一张完美的背景图片，至此就可以实现完整推箱子小游戏了。最后整合的代码就是
 
-<pre><code>
-/*
+<pre><code>/*
 作者:DawsonLee
 Email:dawsonlee1790@foxmail.com
 */
