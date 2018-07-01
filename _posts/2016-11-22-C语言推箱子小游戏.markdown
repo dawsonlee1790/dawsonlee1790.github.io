@@ -111,7 +111,7 @@ author: dawsonlee
 
 图片资源[pic.zip][pic]（把当中的pic文件夹解压，存放在正确路径中，如果路径不正确会导致窗口中没有图像）
 
-  [pic]: {{ site.url }}/assets/posts/pushbox/pic.zip
+  [pic]: {{ site.url }}/assets/posts/pushbox/pic.zip "下载图片资源"
   
 实现的效果如图所示：  
 
@@ -937,5 +937,19 @@ author: dawsonlee
 		}
 	}
 
-### 8.附上整个工程项目的文件
-### 9.通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
+###  8.附上整个工程项目的文件
+
+**[github下载地址][github]**
+**[百度云下载地址][baiduyun]**
+
+  [github]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/pushbox 
+  [baiduyun]:  http://pan.baidu.com/s/1o8poxzc
+  
+###  9.通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
+
+**[github下载地址][github-final]**
+**[百度云下载地址][baiduyun-final]**
+
+  [github-final]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/master 
+  [baiduyun-final]:  http://pan.baidu.com/s/1o8EWOBo
+
