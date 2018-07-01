@@ -27,8 +27,10 @@ author: dawsonlee
     #define MANBALL         7   //主角站在点上
 
 ##  步骤
-1.编译环境：VS2015
-2.要给VS2015[安装EGE图形库][1]
+##1.编译环境：VS2015
+
+###2.要给VS2015[安装EGE图形库][1]
+
 3.要参考[EGE图形库帮助文档][2]
 
   [1]: http://www.jianshu.com/p/b12163e5a0b7   "安装EGE图形库"
