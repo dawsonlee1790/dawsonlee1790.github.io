@@ -8,9 +8,105 @@ tag:
 - C语言
 - EGE库
 - 推箱子小游戏
-star: true
+star: false
 category: blog
 author: dawsonlee
 ---
 
-## 设计思路
+##  设计思路
+
+将整个画面分成13*16的矩阵，每个元素对应者一个小矩形。然后用0代表黑格，1代表白墙，2代表蓝格……，这样就有了整幅图像的信息。然后移动就可以想象成，改变矩阵的坐标信息，形成一个新的矩阵，再重绘。这就是推箱子的基本原理。
+
+    #define BLACK	        0   //黑格:用于填充图像
+    #define WHITEWALL	    1	//白墙:用于阻挡主角移动
+    #define BLUEWALL	    2	//蓝格:用于表示可移动空间
+    #define BALL	        3	//点	:用于指定箱子放置位置
+    #define BOX	            4	//箱子:用于表示初始箱子位置
+    #define REDBOX	        5	//变色的箱子:用于表示这个点位置已经放置箱子
+    #define MAN	            6	//主角:用于表示主角位置
+    #define MANBALL         7   //主角站在点上
+
+##  步骤
+1.  编译环境：VS2015
+2.  要给VS2015[安装EGE图形库][1]
+3.  要参考[EGE图形库帮助文档][2]
+
+  [1]: http://www.jianshu.com/p/b12163e5a0b7   "安装EGE图形库"
+  [2]: http://misakamm.bitbucket.org/man/index.htm  "EGE图形库帮助文档"
+  
+4.刚才我们说到，图像的背后对应着一个矩阵，我们可以考虑将矩阵的信息存储在一个MAP.txt文件中，在程序运行时读取。下面我来介绍，在文件中读取一个矩阵。
+首先我们得有一个TXT文件:`AP.txt`(一定确保路径放置正确),它存储着这样一个`13*16`的矩阵
+
+    0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+    0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+    0	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	
+    0	0	0	1	2	2	2	2	2	2	2	2	1	0	0	0	
+    0	0	0	1	2	2	2	2	2	2	2	2	1	0	0	0	
+    0	0	0	1	2	6	2	4	2	3	2	2	1	0	0	0	
+    0	0	0	1	2	2	2	2	2	2	2	2	1	0	0	0	
+    0	0	0	1	2	2	2	2	2	2	2	2	1	0	0	0	
+    0	0	0	1	2	2	2	2	2	2	2	2	1	0	0	0	
+    0	0	0	1	1	1	1	1	1	1	1	1	1	0	0	0	
+    0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+    0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
+    0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+    
+文本文件中的矩阵读取操作源代码：
+
+    #include<stdio.h>
+    #include<stdlib.h>
+
+    int main()
+    {
+
+    	FILE *fp = fopen("MAP.txt", "rb");//以只读形式打开文件MAP.txt
+    	if (!fp) {
+    		printf("打开文件失败，文件位置你可能放错了\n");
+    		exit(1);
+    	}
+    	int map[13][16];//创建一个map数组用来存储矩阵信息
+    	int i, j;
+    	char str[10];//用于存储从文本文件读取的字符串信息
+    	for (i = 0; i<13; i++)
+    		for (j = 0; j < 16; j++) {
+    			fscanf(fp, "%s", str); //从文件中读取一个字符串，遇到空格结束
+    			map[i][j] = atoi(str);//将字符串转变为整型，并赋值给map[i][j]
+    		}
+    	for (i = 0; i < 13; i++) {
+    		for (j = 0; j < 16; j++) {
+    			printf("%d", map[i][j]);//遍历输出矩阵信息
+    		}
+    		printf("\n");
+       	}
+    	return 0;
+    }
+
+接下我们要把TXT文件的读取矩阵的功能，写在一个readmap()函数中，实现功能的模块化。并加多一项功能，就是查找出，MAN的位置。
+
+{% highlight html %}
+//map[13][16]是形参，其中&man_i表是的是man_i的引用，引用传递的意义在于：传入参数会因函数中的操作而改变
+int readmap(int map[13][16], int &man_i, int &man_j)
+{
+	FILE *fp = fopen("MAP.txt", "rb");//以只读形式打开文件MAP.txt
+	if (!fp) {
+		printf("打开文件失败，文件位置你可能放错了\n");
+		exit(1);//打开失败则结束程序
+	}
+	int i, j;
+	char str[10];//用于存储从文本文件读取的字符串信息
+	for (i = 0; i<13; i++)
+		for (j = 0; j < 16; j++) 
+		{
+			fscanf(fp, "%s", str); //从文件中读取一个字符串，遇到空格结束
+			map[i][j] = atoi(str);//将字符串转变为整型，并赋值给map[i][j]
+			if (map[i][j] == MAN) //如果找到了MAN的位置，则返回坐标在 man_i和 man_j 中
+			{
+				man_i = i;
+				man_j = j;
+			}
+		}
+	return 0;
+}
+{% endhighlight %}
+
+
