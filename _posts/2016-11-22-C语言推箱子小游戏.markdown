@@ -109,7 +109,8 @@ author: dawsonlee
 
 ###  5.接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
-<pre><code>#include<stdio.h>
+<pre><code>
+#include<stdio.h>
 #include<stdlib.h>
 #include<graphics.h>
 
@@ -223,7 +224,6 @@ void darm(int a, int ii, int jj)
 	}
 	ege::delimage(img);
 }
-
 </code></pre>
 
 ###  6.实现图像的绘制以后那我们就应该实现图像的移动了。
