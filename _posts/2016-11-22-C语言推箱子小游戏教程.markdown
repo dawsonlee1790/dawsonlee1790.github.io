@@ -962,11 +962,18 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
   [baiduyun-pushbox]:  http://pan.baidu.com/s/1o8poxzc
   
 ###  9.通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
-
+ 
+####  源码版本
 *  [View on GitHub][github-view-master]
 *  [GitHub Download .zip][baiduyun-master]
+
+####  Release版本（可执行文件 .exe）
 *  [百度云][baiduyun-master]
 
   [github-view-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/tree/master  "master分支"
   [baiduyun-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/master "master分支zip下载"
   [baiduyun-master]:  http://pan.baidu.com/s/1o8EWOBo
+  
+#### 项目展示视频：
+  
+<iframe src="//player.bilibili.com/player.html?aid=24442325&cid=41041091&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
