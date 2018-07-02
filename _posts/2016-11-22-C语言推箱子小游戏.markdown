@@ -26,7 +26,7 @@ Dawson Lee edited this page on Beijing, 2018/7/3
 	#define MAN	      6	//主角:用于表示主角位置
 	#define MANBALL       7 //主角站在点上
 
-![设计思路]({{ site.url }}/assets/posts/pushbox/设计思路.png)
+![设计思路](/assets/posts/pushbox/设计思路.png)
 
 ##  步骤
 
