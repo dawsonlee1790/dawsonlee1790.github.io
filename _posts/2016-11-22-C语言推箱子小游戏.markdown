@@ -130,7 +130,7 @@ Tip:如果连接失效，请自行百度或者google"EGE图形库帮助文档"
   
 实现的效果如图所示：  
 
-![效果图-无背景]({{ site.url }}/assets/posts/pushbox/效果图-无背景.png)
+![效果图-无背景](/assets/posts/pushbox/效果图-无背景.png)
 
 绘制操作的源代码：
 
@@ -252,11 +252,11 @@ Tip:如果连接失效，请自行百度或者google"EGE图形库帮助文档"
 
 ###  6.实现图像的绘制以后那我们就应该实现图像的移动了。
 
-![向右移动]({{ site.url }}/assets/posts/pushbox/向右移动.png)
+![向右移动](/assets/posts/pushbox/向右移动.png)
 
 首先将所有的情况列举出来并存入数组`table[i][0]`中,将改变后的第一个格子信息存在`table[i][1]`中，第二个格子信息存在`table[i][2]`中，第三个格子信息存在`table[i][3]`中。
 
-![数组table]({{ site.url }}/assets/posts/pushbox/数组table.png)
+![数组table](/assets/posts/pushbox/数组table.png)
 
 然后就可以开始写`move()`函数，实现`MAN`的移动。`move()`函数源代码
 
@@ -670,7 +670,7 @@ Tip:如果连接失效，请自行百度或者google"EGE图形库帮助文档"
 ###  7.最后，我们给窗口载入一张完美的背景图片，至此就可以实现完整推箱子小游戏了。
 
 实际效果图：
-![效果图-背景]({{ site.url }}/assets/posts/pushbox/效果图-背景.png)
+![效果图-背景](/assets/posts/pushbox/效果图-背景.png)
 
 最后整合的代码就是：
 
