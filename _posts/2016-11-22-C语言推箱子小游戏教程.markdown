@@ -978,4 +978,3 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
   
 <iframe width="810" height="607" src="//player.bilibili.com/player.html?aid=24442325&cid=41041091&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-<video src="blob:http://player.bilibili.com/76f7c836-d4d3-4c35-8027-bf13093e8278"></video>
