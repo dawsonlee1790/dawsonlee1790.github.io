@@ -1,5 +1,5 @@
 ---
-title: "C语言推箱子小游戏"
+title: "C语言推箱子小游戏教程"
 layout: post
 date: 2016-11-22
 image: 
@@ -10,6 +10,8 @@ star: false
 category: blog
 author: dawsonlee
 ---
+
+Dawson Lee edited this page on Beijing, 2018/7/3
 
 ##  设计思路
 
@@ -27,12 +29,25 @@ author: dawsonlee
 ![设计思路]({{ site.url }}/assets/posts/pushbox/设计思路.png)
 
 ##  步骤
-###  1.编译环境：VS2015
-###  2.要给VS2015[安装EGE图形库][1]
-###  3.要参考[EGE图形库帮助文档][2]
 
+###  1.编译环境：[Visual Studio Community 2015][VS2015]
+
+Tip:
+*  您也可以自行百度或者google Visual Studio Community 2015的其它下载途径
+*  您也可以尝试使用Visual Studio其它版本，但有可能会出现未知问题
+
+###  2.要给VS2015[安装EGE图形库][1]
+
+###  3.要参考EGE图形库帮助文档
+*  [bitbucket][2]
+*  [xege.org][3]
+
+Tip:如果连接失效，请自行百度或者google"EGE图形库帮助文档"
+  
+  [VS2015]: https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2015-version-history "VS2015微软下载地址"
   [1]: http://www.jianshu.com/p/b12163e5a0b7   "安装EGE图形库"
-  [2]: http://misakamm.bitbucket.org/man/index.htm  "EGE图形库帮助文档"
+  [2]: http://bitbucket.org/wysaid/ege-manual  "bitbucket的EGE图形库帮助文档"
+  [3]: http://xege.org/manual/ "xege.org的EGE图形库帮助文档"
   
 ###  4.刚才我们说到，图像的背后对应着一个矩阵，我们可以考虑将矩阵的信息存储在一个MAP.txt文件中，在程序运行时读取。下面我来介绍，在文件中读取一个矩阵。
 首先我们得有一个TXT文件:`MAP.txt`(一定确保路径放置正确),它存储着这样一个`13*16`的矩阵
@@ -938,18 +953,20 @@ author: dawsonlee
 	}
 
 ###  8.附上整个工程项目的文件
+*  [View on GitHub][github-view-pushbox]
+*  [GitHub Download .zip][download-zip-pushbox]
+*  [百度云][baiduyun-pushbox]
 
-**[github下载地址][github]**
-**[百度云下载地址][baiduyun]**
-
-  [github]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/pushbox 
-  [baiduyun]:  http://pan.baidu.com/s/1o8poxzc
+  [github-view-pushbox]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/tree/pushbox  "pushbox分支"
+  [download-zip-pushbox]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/pushbox "pushbox分支zip下载"
+  [baiduyun-pushbox]:  http://pan.baidu.com/s/1o8poxzc
   
 ###  9.通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
 
-**[github下载地址][github-final]**
-**[百度云下载地址][baiduyun-final]**
+*  [View on GitHub][github-view-master]
+*  [GitHub Download .zip][baiduyun-master]
+*  [百度云][baiduyun-master]
 
-  [github-final]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/master 
-  [baiduyun-final]:  http://pan.baidu.com/s/1o8EWOBo
-
+  [github-view-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/tree/master  "master分支"
+  [baiduyun-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/master "master分支zip下载"
+  [baiduyun-master]:  http://pan.baidu.com/s/1o8EWOBo
