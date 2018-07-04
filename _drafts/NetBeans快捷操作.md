@@ -1,0 +1,4 @@
+## 生成Getter和Setter方法
+在源代码编辑器中右键单击名称字段，然后选择`重构>封装字段`。
+将打开“封装字段”对话框，其中列出了名称字段。请注意，Fields的Visibility默认设置为private，Accessors的Visibility设置为public，
+表示类变量声明的访问修饰符将被指定为private，而getter和setter方法将分别使用public和private修饰符生成。
