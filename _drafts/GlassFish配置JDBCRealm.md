@@ -1,28 +1,28 @@
-﻿  [1]: /assets/posts/GlassFish配置JDBCRealm/我数据库的结构.png
+  [1]: /assets/posts/GlassFish配置JDBCRealm/我数据库的结构.png
   [2]: /assets/posts/GlassFish配置JDBCRealm/我的JDBCRealm配置.png
 
 ##  数据库结构
 *  USERS表
 
-CREATE TABLE USERS (
-        USERID VARCHAR(50) NOT NULL,
-        PASSWORD VARCHAR(128) NOT NULL
-    );
+		CREATE TABLE USERS (
+				USERID VARCHAR(50) NOT NULL,
+				PASSWORD VARCHAR(128) NOT NULL
+			);
 
 
 *  GROUPS表
 
-CREATE TABLE GROUPS (
-        GROUPID VARCHAR(20) NOT NULL
-    );
+		CREATE TABLE GROUPS (
+				GROUPID VARCHAR(20) NOT NULL
+			);
 
 
 *  USERS_GROUPS联接表
 
-CREATE TABLE USERS_GROUPS (
-        GROUPID VARCHAR(20) NOT NULL,
-        USERID VARCHAR(50) NOT NULL
-    );
+		CREATE TABLE USERS_GROUPS (
+				GROUPID VARCHAR(20) NOT NULL,
+				USERID VARCHAR(50) NOT NULL
+			);
 
 ##  Glassfish JDBCRealm配置片段来自domain.xml
 
@@ -60,7 +60,7 @@ CREATE TABLE USERS_GROUPS (
 *  我的JDBCRealm配置
 ![我的JDBCRealm配置][2]
 
-** 注意：
+* 注意：
 >  JAAS Context 一定得填`jdbcRealm`，否则会报错
 
 			javax.security.auth.login.LoginException:没有为 MyRealm  配置LoginModules 
@@ -72,6 +72,6 @@ CREATE TABLE USERS_GROUPS (
 
 ---
 
-["参考"](https://stackoverflow.com/questions/6809081/glassfish-jdbc-realm-group-membership)
+["参考GlassFish JDBC Realm Group Membership"](https://stackoverflow.com/questions/6809081/glassfish-jdbc-realm-group-membership)
 
 ---
