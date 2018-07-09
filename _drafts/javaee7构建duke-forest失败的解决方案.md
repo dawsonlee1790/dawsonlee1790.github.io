@@ -1,53 +1,53 @@
-  [1]: assets/posts/javaee7¹¹½¨duke-forestÊ§°ÜµÄ½â¾ö·½°¸/examples.png
-  [2]: assets/posts/javaee7¹¹½¨duke-forestÊ§°ÜµÄ½â¾ö·½°¸/pom.xml.png
-  [3]: assets/posts/javaee7¹¹½¨duke-forestÊ§°ÜµÄ½â¾ö·½°¸/build-duke-forest.png
+  [1]: /assets/posts/javaee7æ„å»ºduke-forestå¤±è´¥çš„è§£å†³æ–¹æ¡ˆ/examples.png
+  [2]: /assets/posts/javaee7æ„å»ºduke-forestå¤±è´¥çš„è§£å†³æ–¹æ¡ˆ/pom.xml.png
+  [3]: /assets/posts/javaee7æ„å»ºduke-forestå¤±è´¥çš„è§£å†³æ–¹æ¡ˆ/build-duke-forest.png
 
 
 
-##  ´íÎó´úÂë
+##  é”™è¯¯ä»£ç 
 	dukes-payment ..................................... FAILURE [4.308s]
 	...
 	Failed to execute goal org.codehaus.cargo:cargo-maven2-plugin:1.4.4:redeploy (deploy) on project dukes-store: 
 	Execution deploy of goal org.codehaus.cargo:cargo-maven2-plugin:1.4.4:redeploy failed: 
 	GlassFish admin command failed: asadmin exited 1 -> [Help 1]
 
-##  Ô­Òò
-ÓÉÓÚ²»ÄÜÕÒµ½GlassfishµÄÕıÈ·Â·¾¶µ¼ÖÂµÄ
+##  åŸå› 
+ç”±äºä¸èƒ½æ‰¾åˆ°Glassfishçš„æ­£ç¡®è·¯å¾„å¯¼è‡´çš„
 
-##  ½â¾ö·½°¸
+##  è§£å†³æ–¹æ¡ˆ
 ### NetBeans8.2
-1. ´ò¿ªÏîÄ¿` /javaee-tutorial/examples`
-![´ò¿ªexample][1]
-2. ´ò¿ªÏîÄ¿`javaeetutorial->ÏîÄ¿ÎÄ¼ş->pom.xml`
-![´ò¿ªpom.xml][2]
-3. ÕÒµ½ÀàËÆ´úÂë
-        <profile>
-            <id>windows</id>
-            <activation>
-                <os>
-                    <family>windows</family>
-                </os>
-            </activation>
-            <properties>
-                <glassfish.home.prefix>c:/</glassfish.home.prefix>
-                <glassfish.executables.suffix>.bat</glassfish.executables.suffix>
-            </properties>
-        </profile>
-4.  ĞŞ¸ÄÎª
-        <profile>
-            <id>windows</id>
-            <activation>
-                <os>
-                    <family>windows</family>
-                </os>
-            </activation>
-            <properties>
-                <glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>
-                <glassfish.home.prefix>c:/</glassfish.home.prefix>
-                <glassfish.executables.suffix>.bat</glassfish.executables.suffix>
-            </properties>
-        </profile>
-5.  Æô¶¯JavaDB
-6.  Æô¶¯GlassFish Server
-7.  Êó±êÓÒ¼üÏîÄ¿`dukes-forest`¹¹½¨
-![¹¹½¨][3]
+1. æ‰“å¼€é¡¹ç›®` /javaee-tutorial/examples`
+![æ‰“å¼€example][1]
+2. æ‰“å¼€é¡¹ç›®`javaeetutorial->é¡¹ç›®æ–‡ä»¶->pom.xml`
+![æ‰“å¼€pom.xml][2]
+3. æ‰¾åˆ°ç±»ä¼¼ä»£ç 
+			<profile>
+				<id>windows</id>
+				<activation>
+					<os>
+						<family>windows</family>
+					</os>
+				</activation>
+				<properties>
+					<glassfish.home.prefix>c:/</glassfish.home.prefix>
+					<glassfish.executables.suffix>.bat</glassfish.executables.suffix>
+				</properties>
+			</profile>
+4.  ä¿®æ”¹ä¸º
+			<profile>
+				<id>windows</id>
+				<activation>
+					<os>
+						<family>windows</family>
+					</os>
+				</activation>
+				<properties>
+					<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>
+					<glassfish.home.prefix>c:/</glassfish.home.prefix>
+					<glassfish.executables.suffix>.bat</glassfish.executables.suffix>
+				</properties>
+			</profile>
+5.  å¯åŠ¨JavaDB
+6.  å¯åŠ¨GlassFish Server
+7.  é¼ æ ‡å³é”®é¡¹ç›®`dukes-forest`æ„å»º
+![æ„å»º][3]
