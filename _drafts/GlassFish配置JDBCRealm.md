@@ -66,8 +66,11 @@
 	javax.security.auth.login.LoginException:没有为 MyRealm  配置LoginModules 
 	
 >  `User Name Column`一定要填`user`表的主键（即`primerykey`）
+>
 >  `Group Table User Name Column`也一定要填组表（在这里指`group_has_user`表）关联到`user.id`的外键`group_has_user.id`
->  否则GlassFish服务器会报错`严重：jdbcrealm.grouperror`。即使不报错还是会导致*用户权限约束*失效
+>  否则GlassFish服务器会报错`严重：jdbcrealm.grouperror`。
+>  
+>  即使不报错还是会导致 \*用户权限约束\*失效
 
 
 ---
