@@ -1,4 +1,22 @@
-﻿  [1]: /assets/posts/GlassFish配置JDBCRealm/我数据库的结构.png
+﻿---
+title: "GlassFish配置JDBCRealm"
+layout: post
+date: 2018-07-10
+image: 
+headerImage: false
+tag:
+- GlassFish
+- JDBCRealm
+star: false
+category: blog
+author: dawsonlee
+---
+
+Dawson Lee edited this page on Beijing, 2018/7/11
+
+---
+
+  [1]: /assets/posts/GlassFish配置JDBCRealm/我数据库的结构.png
   [2]: /assets/posts/GlassFish配置JDBCRealm/我的JDBCRealm配置.png
 
 ##  数据库结构
