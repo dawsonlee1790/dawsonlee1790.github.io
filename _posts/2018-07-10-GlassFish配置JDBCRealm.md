@@ -1,4 +1,4 @@
-  [1]: /assets/posts/GlassFish配置JDBCRealm/我数据库的结构.png
+﻿  [1]: /assets/posts/GlassFish配置JDBCRealm/我数据库的结构.png
   [2]: /assets/posts/GlassFish配置JDBCRealm/我的JDBCRealm配置.png
 
 ##  数据库结构
