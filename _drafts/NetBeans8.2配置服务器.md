@@ -12,11 +12,10 @@
   [10]:  /assets/posts/NetBeans8.2配置服务器/WildFly应用服务器配置.png
   [11]:  /assets/posts/NetBeans8.2配置服务器/启动WildFly应用服务器.png
 
-
 ##  TomEE
 *  [Apache TomEE下载][1]
 
-![下载TomEE .zip文件][2]
+![下载TomEE .zip文件](/assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png)
 
 *  解压下载包到你想放的位置
 
