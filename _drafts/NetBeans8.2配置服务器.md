@@ -1,6 +1,6 @@
   [1]:  http://tomee.apache.org/download-ng.html  "Apache TomEE下载页面" 
-  [2]:  /assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png
-  [3]:  /assets/posts/NetBeans8.2配置服务器/右键添加服务器.png
+  [2]:  /assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png  ""
+  [3]:  /assets/posts/NetBeans8.2配置服务器/右键添加服务器.png  ""
   [4]:  /assets/posts/NetBeans8.2配置服务器/选择Apache Tomcat 或 TomEE.png
   [5]:  /assets/posts/NetBeans8.2配置服务器/TomEE配置.png
   [6]:  /assets/posts/NetBeans8.2配置服务器/启动TomEE.png
