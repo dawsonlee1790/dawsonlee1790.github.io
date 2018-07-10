@@ -1,18 +1,16 @@
-﻿  [1]: http://tomee.apache.org/download-ng.html  “Apache TomEE下载页面”
-  [2]: /assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png
-  [3]: /assets/posts/NetBeans8.2配置服务器/右键添加服务器.png
-  [4]: /assets/posts/NetBeans8.2配置服务器/选择Apache Tomcat 或 TomEE.png
-  [5]: /assets/posts/NetBeans8.2配置服务器/TomEE配置.png
-
-  [6]: /assets/posts/NetBeans8.2配置服务器/启动TomEE.png
+  [1]:  http://tomee.apache.org/download-ng.html  "Apache TomEE下载页面"
+  [2]:  /assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png
+  [3]:  /assets/posts/NetBeans8.2配置服务器/右键添加服务器.png
+  [4]:  /assets/posts/NetBeans8.2配置服务器/选择Apache Tomcat 或 TomEE.png
+  [5]:  /assets/posts/NetBeans8.2配置服务器/TomEE配置.png
+  [6]:  /assets/posts/NetBeans8.2配置服务器/启动TomEE.png
   [6.1]:  /assets/posts/NetBeans8.2配置服务器/TomEE启动失败解决.png
   [6.2]:  https://stackoverflow.com/questions/30647156/tomee-starts-but-netbeans-gives-failed-to-start-error  "TomEE启动但Netbeans给出“启动失败”错误的解决方案参考"
-  [7]: http://wildfly.org/downloads/  "WildFly应用服务器下载页面"
-  [8]: /assets/posts/NetBeans8.2配置服务器/下载WildFly .zip文件.png
-  [9]: /assets/posts/NetBeans8.2配置服务器/选择WildFly应用服务器.png
-  [10]: /assets/posts/NetBeans8.2配置服务器/WildFly应用服务器配置.png
-
-  [11]: /assets/posts/NetBeans8.2配置服务器/启动WildFly应用服务器.png
+  [7]:  http://wildfly.org/downloads/  "WildFly应用服务器下载页面"
+  [8]:  /assets/posts/NetBeans8.2配置服务器/下载WildFly .zip文件.png
+  [9]:  /assets/posts/NetBeans8.2配置服务器/选择WildFly应用服务器.png
+  [10]:  /assets/posts/NetBeans8.2配置服务器/WildFly应用服务器配置.png
+  [11]:  /assets/posts/NetBeans8.2配置服务器/启动WildFly应用服务器.png
 
 
 ##  TomEE
