@@ -1,73 +1,73 @@
-  [1]:  http://tomee.apache.org/download-ng.html  "Apache TomEE下载页面" 
-  [2]:  /assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png  ""
-  [3]:  /assets/posts/NetBeans8.2配置服务器/右键添加服务器.png  ""
-  [4]:  /assets/posts/NetBeans8.2配置服务器/选择Apache Tomcat 或 TomEE.png
-  [5]:  /assets/posts/NetBeans8.2配置服务器/TomEE配置.png
-  [6]:  /assets/posts/NetBeans8.2配置服务器/启动TomEE.png
-  [6.1]:  /assets/posts/NetBeans8.2配置服务器/TomEE启动失败解决.png
-  [6.2]:  https://stackoverflow.com/questions/30647156/tomee-starts-but-netbeans-gives-failed-to-start-error  "TomEE启动但Netbeans给出“启动失败”错误的解决方案参考"
-  [7]:  http://wildfly.org/downloads/  "WildFly应用服务器下载页面"
-  [8]:  /assets/posts/NetBeans8.2配置服务器/下载WildFly .zip文件.png
-  [9]:  /assets/posts/NetBeans8.2配置服务器/选择WildFly应用服务器.png
-  [10]:  /assets/posts/NetBeans8.2配置服务器/WildFly应用服务器配置.png
-  [11]:  /assets/posts/NetBeans8.2配置服务器/启动WildFly应用服务器.png
+   [1]:  http://tomee.apache.org/download-ng.html  "Apache TomEE下载页面" 
+   [2]:  /assets/posts/NetBeans8.2配置服务器/下载TomEE .zip文件.png  
+   [3]:  /assets/posts/NetBeans8.2配置服务器/右键添加服务器.png  
+   [4]:  /assets/posts/NetBeans8.2配置服务器/选择Apache Tomcat 或 TomEE.png
+   [5]:  /assets/posts/NetBeans8.2配置服务器/TomEE配置.png
+   [6]:  /assets/posts/NetBeans8.2配置服务器/启动TomEE.png
+   [6.1]:  /assets/posts/NetBeans8.2配置服务器/TomEE启动失败解决.png
+   [6.2]:  https://stackoverflow.com/questions/30647156/tomee-starts-but-netbeans-gives-failed-to-start-error  "TomEE启动但Netbeans给出“启动失败”错误的解决方案参考"
+   [7]:  http://wildfly.org/downloads/  "WildFly应用服务器下载页面"
+   [8]:  /assets/posts/NetBeans8.2配置服务器/下载WildFly .zip文件.png
+   [9]:  /assets/posts/NetBeans8.2配置服务器/选择WildFly应用服务器.png
+   [10]:  /assets/posts/NetBeans8.2配置服务器/WildFly应用服务器配置.png
+   [11]:  /assets/posts/NetBeans8.2配置服务器/启动WildFly应用服务器.png
 
 ##  TomEE
 *  [Apache TomEE下载][1]
 
-![下载TomEE.zip文件][2]
+  ![下载TomEE.zip文件][2]
 
 *  解压下载包到你想放的位置
 
 *  netbeans8.2 IDE 鼠标右键添加服务器
 
-![右键添加服务器][3]
+  ![右键添加服务器][3]
 
 *  选择Apache Tomcat 或 TomEE
 
-![选择Apache Tomcat 或 TomEE][4]
+  ![选择Apache Tomcat 或 TomEE][4]
 
 *  选择TomEE文件根目录
 *  用户名：**admin**
 *  密码：**admin**
 >  因为我事先已经添加过该TomEE服务器根目录，所以有报错`已注册了包含相同 Catalina 主文件夹的 Tomcat`
 
-![TomEE配置][5]
+  ![TomEE配置][5]
 
 
 *  右键启动TomEE检查是否成功配置
 >  注意：防止多个服务器之间的端口冲突
 
-![启动TomEE][6]
+  ![启动TomEE][6]
 
 *  TomEE启动失败解决
 >  **取消选中**Apache TomEE的服务器属性的“ 平台”选项卡上的“ 使用IDE代理设置”复选框
 
-![TomEE启动失败解决][6.1]
-[TomEE启动但Netbeans给出“启动失败”错误的解决方案参考][6.2]
+  ![TomEE启动失败解决][6.1]
+  [TomEE启动但Netbeans给出“启动失败”错误的解决方案参考][6.2]
 
 ##  WildFly应用服务器
 *  [WildFly应用服务器下载][7]
 
-![下载WildFly .zip文件][8]
+  ![下载WildFly .zip文件][8]
 
 *  解压下载包到你想放的位置
 
 *  netbeans8.2 IDE 鼠标右键添加服务器
 
-![右键添加服务器][3]
+  ![右键添加服务器][3]
 
 *  选择WildFly应用服务器
 
-![选择WildFly应用服务器][9]
+  ![选择WildFly应用服务器][9]
 
 *  选择WildFly应用服务器根目录
 
-![WildFly应用服务器配置][10]
+  ![WildFly应用服务器配置][10]
 
 *  右键启动WildFly应用服务器已检查是否成功配置
 >  注意：防止多个服务器之间的端口冲突
 
-![启动WildFly应用服务器][11]
+  ![启动WildFly应用服务器][11]
 
 
