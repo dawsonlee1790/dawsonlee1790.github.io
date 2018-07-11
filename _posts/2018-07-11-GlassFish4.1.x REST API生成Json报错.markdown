@@ -1,6 +1,3 @@
-﻿  [1]:  http://book2s.com/java/jar/o/org-eclipse-persistence-moxy/download-org.eclipse.persistence.moxy-2.6.1.html   "下载org.eclipse.persistence.moxy-2.6.1"
-  [2]:  /assets/posts/GlassFish4.1.x REST API生成Json报错/下载org.eclipse.persistence.moxy-2.6.1.jar.png
-  [3]:  https://stackoverflow.com/questions/33722764/glassfish-error-when-producing-json
 ---
 title: "GlassFish4.1.x REST API生成Json报错"
 layout: post
@@ -14,6 +11,11 @@ star: false
 category: blog
 author: dawsonlee
 ---
+
+
+  [1]:  http://book2s.com/java/jar/o/org-eclipse-persistence-moxy/download-org.eclipse.persistence.moxy-2.6.1.html   "下载org.eclipse.persistence.moxy-2.6.1"
+  [2]:  /assets/posts/GlassFish4.1.x REST API生成Json报错/下载org.eclipse.persistence.moxy-2.6.1.jar.png
+  [3]:  https://stackoverflow.com/questions/33722764/glassfish-error-when-producing-json
 
 Dawson Lee edited this page on Beijing, 2018/7/11
 
