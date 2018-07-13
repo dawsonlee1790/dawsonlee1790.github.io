@@ -1,5 +1,5 @@
 ﻿---
-title: "NetBeans8.2配置服务器"
+title: "window 10下Hyper-V PowerShell Module is not available报错解决方法"
 layout: post
 date: 2018-07-14
 image: 
