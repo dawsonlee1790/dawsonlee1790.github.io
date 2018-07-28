@@ -15,13 +15,13 @@ Dawson Lee edited this page on Beijing, 2018/7/28
 
 <div class="breaker"></div>
 
-   [1]:  /assets/posts/NetBeans8.2外观配置/初体验.png
-   [2]:  /assets/posts/NetBeans8.2外观配置/找到netbeans.conf.png
-   [3]:  /assets/posts/NetBeans8.2外观配置/添加字段.png
-   [4]:  /assets/posts/NetBeans8.2外观配置/大字体的NetBeans.png
-   [5]:  /assets/posts/NetBeans8.2外观配置/工具选项.png
-   [6]:  /assets/posts/NetBeans8.2外观配置/代码.png
-   [7]:  /assets/posts/NetBeans8.2外观配置/最终的NetBeans.png
+   [1]:  /assets/posts/NetBeans8.2外观配置/初体验.PNG
+   [2]:  /assets/posts/NetBeans8.2外观配置/找到netbeans.conf.PNG
+   [3]:  /assets/posts/NetBeans8.2外观配置/添加字段.PNG
+   [4]:  /assets/posts/NetBeans8.2外观配置/大字体的NetBeans.PNG
+   [5]:  /assets/posts/NetBeans8.2外观配置/工具选项.PNG
+   [6]:  /assets/posts/NetBeans8.2外观配置/代码.PNG
+   [7]:  /assets/posts/NetBeans8.2外观配置/最终的NetBeans.PNG
 
 ## 我对NetBeans的UI初体验
 
