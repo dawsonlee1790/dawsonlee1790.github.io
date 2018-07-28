@@ -13,7 +13,7 @@ author: dawsonlee
 
 Dawson Lee edited this page on Beijing, 2018/7/28
 
----
+<div class="breaker"></div>
 
    [1]:  /assets/posts/NetBeans8.2外观配置/初体验.png
    [2]:  /assets/posts/NetBeans8.2外观配置/找到netbeans.conf.png
@@ -31,11 +31,11 @@ Dawson Lee edited this page on Beijing, 2018/7/28
 *  窗口字体好小（解决方法：[设置窗口字体大小](#change_win_size)）
 *  编辑器代码看久了疲劳（解决方法：[设置编辑器高亮风格](#code_style)）
 
-![初体验][1]
+  ![初体验][1]
 
 
 
-<div class="breaker"></div>
+
 <a id="change_win_size"></a>
 ##  设置窗口字体大小
 
@@ -52,9 +52,9 @@ Dawson Lee edited this page on Beijing, 2018/7/28
 
 字体调大一些，虽然并没有那么美观和谐，但当你打代码久了以后你会发现，我好喜欢这**大字体**啊！
 
-![添加字段][3]
+  ![添加字段][3]
 
-![大字体的NetBeans][4]
+  ![大字体的NetBeans][4]
 
 
 <a id="code_style"></a>
@@ -62,15 +62,15 @@ Dawson Lee edited this page on Beijing, 2018/7/28
 
 *  1.打开`工具 -> 选项 -> 字体和颜色`
 
-![工具->选项][5]
+  ![工具->选项][5]
 
 *  2.按图中操作
 
-![代码][6]
+  ![代码][6]
 
 这就是我自己喜欢的NetBeans UI风格
 
 非常适合长时间编代码的工作
 
-![最终NetBeans][7]
+  ![最终NetBeans][7]
 
