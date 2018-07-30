@@ -11,7 +11,7 @@ category: blog
 author: dawsonlee
 ---
 
-Dawson Lee edited this page on Beijing, 2018/7/28 7/30
+Dawson Lee edited this page on Beijing, 2018/7/28
 
 <div class="breaker"></div>
 
