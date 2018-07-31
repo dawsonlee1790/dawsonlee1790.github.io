@@ -24,11 +24,11 @@ Dawson Lee edited this page on Beijing, 2018/7/31
 
 *  NetBeans8.2注册中心
 
-    http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
+        http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
 
 *  插件门户
 
-    http://plugins.netbeans.org/nbpluginportal/updates/8.2/catalog.xml.gz
+        http://plugins.netbeans.org/nbpluginportal/updates/8.2/catalog.xml.gz
 
 ### 参考
 
