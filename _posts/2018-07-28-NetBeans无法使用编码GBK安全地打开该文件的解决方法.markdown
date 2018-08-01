@@ -15,7 +15,7 @@ Dawson Lee edited this page on Beijing, 2018/7/28
 
 <div class="breaker"></div>
 
-    [1]:  /assets/posts/NetBeans无法使用编码GBK安全地打开该文件的解决方法/找到netbeans.conf.PNG
+  [1]:  /assets/posts/NetBeans无法使用编码GBK安全地打开该文件的解决方法/找到netbeans.conf.PNG
 
 
 ##  设置窗口字体大小
