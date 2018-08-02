@@ -95,6 +95,8 @@ Dawson Lee edited this page on Beijing, 2018/8/3
 
 ![设置环境变量][8]
 
+我的cygwin的bin地址是：`D:\cygwin64\bin`
+
 ### 10.验证成功
 
 *  1.通过在Windows命令提示符下键入以下命令来检查Cygwin环境的版本：
@@ -111,6 +113,11 @@ Dawson Lee edited this page on Beijing, 2018/8/3
 ![成功cmd][9]
 
 ![成功netbeans][10]
+
+
+
+
+
 
 <a id="reference"></a>
 ### 参考
