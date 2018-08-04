@@ -13,7 +13,7 @@ author: dawsonlee
 ---
 
 
-Dawson Lee edited this page on Beijing, 2018/8/2
+Dawson Lee edited this page on Beijing, 2018/8/5
 
 <div class="breaker"></div>
 
@@ -33,12 +33,14 @@ Dawson Lee edited this page on Beijing, 2018/8/2
 
 
 
-中加上` -J-Duser.country=US`变为
+中加上`-J-Duser.language=zh -J-Duser.country=US`变为
 
 		
-	#netbeans_default_options="-J-Duser.country=US -J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true"
+	#netbeans_default_options="-J-Duser.language=zh -J-Duser.country=US -J-client -J-Xss2m -J-Xms32m -J-Dapple.laf.useScreenMenuBar=true -J-Dapple.awt.graphics.UseQuartz=true -J-Dsun.java2d.noddraw=true -J-Dsun.java2d.dpiaware=true -J-Dsun.zip.disableMemoryMapping=true"
 
+参数` -J-Duser.language=zh -J-Duser.country=US ` 是调用java的本身系统属性，设置语言为中文，国家为美国。这点很重要！
 
+国家是美国使Netbeans的界面为英文，而语言为中文使Netbeans可以支持中文，如果只需要英文则可以把language设为en，不过在调用file browser的时候会发现左边一系列windows特性的中文按钮都回变成乱码。
 
 **注意**：该字段在原本的文件中并不存在，您需要自己添加，保存后，重启IDE
 
