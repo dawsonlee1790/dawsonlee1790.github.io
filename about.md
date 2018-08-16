@@ -17,5 +17,12 @@ layout: page
 || Python |
 || XML + WebServer |
 
-#  熟悉
-### 了解
+
+## 在读书单
+
+* 《Applying UML and Patterns》Craig Larman
+* 《编写有效用例》(美) Alistair Cockburn 
+
+## 计划书单
+
+* 《软件工程的本质：运用SEMAT内核》(瑞典) Ivar Jacobson 
