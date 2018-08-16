@@ -1,7 +1,7 @@
 ---
 title: "C语言推箱子小游戏教程"
 layout: post
-date: 2016-11-22
+date: 2018-07-03
 image: 
 headerImage: false
 tag:
@@ -10,11 +10,12 @@ star: false
 projects: true
 category: project
 author: dawsonlee
----
-
-Dawson Lee edited this page on Beijing, 2018/7/3
 
 ---
+
+本教程是我在2016年11月22日编写的,今天在我的博客上重新发布
+
+<div class="breaker"></div>
 
 ##  设计思路
 

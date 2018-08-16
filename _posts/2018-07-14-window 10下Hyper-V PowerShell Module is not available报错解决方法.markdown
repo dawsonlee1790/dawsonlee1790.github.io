@@ -9,11 +9,9 @@ tag:
 star: false
 category: blog
 author: dawsonlee
----
-
-Dawson Lee edited this page on Beijing, 2018/7/14
 
 ---
+
   [1]:  https://blog.csdn.net/harxingxing/article/details/docker-machine-Windows-i386.exe
   [2]:  https://github.com/harxingxing/favorite/raw/master/docker/docker-machine-Windows-x86_64.exe
 

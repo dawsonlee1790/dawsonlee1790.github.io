@@ -9,11 +9,9 @@ tag:
 star: false
 category: blog
 author: dawsonlee
+
 ---
 
-Dawson Lee edited this page on Beijing, 2018/7/28
-
-<div class="breaker"></div>
 
    [1]:  /assets/posts/NetBeans8.2外观配置/初体验.PNG
    [2]:  /assets/posts/NetBeans8.2外观配置/找到netbeans.conf.PNG

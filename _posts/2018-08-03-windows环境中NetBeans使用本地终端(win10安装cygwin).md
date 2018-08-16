@@ -11,12 +11,10 @@ tag:
 star: false
 category: blog
 author: dawsonlee
+
 ---
 
 
-Dawson Lee edited this page on Beijing, 2018/8/3
-
-<div class="breaker"></div>
  
   [1]:  /assets/posts/windows环境中NetBeans使用本地终端(win10安装cygwin)/本地终端需要cygwin.png
   [2]:  /assets/posts/windows环境中NetBeans使用本地终端(win10安装cygwin)/choose_installation_type.png

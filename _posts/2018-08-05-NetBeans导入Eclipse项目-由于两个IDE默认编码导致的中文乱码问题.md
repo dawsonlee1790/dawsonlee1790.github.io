@@ -13,9 +13,6 @@ author: dawsonlee
 
 ---
 
-Dawson Lee edited this page on Beijing, 2018/8/5
-
----
 
   [1]:  /assets/posts/NetBeans导入Eclipse项目-由于两个IDE默认编码导致的中文乱码问题/导入项目.png
   [2]:  /assets/posts/NetBeans导入Eclipse项目-由于两个IDE默认编码导致的中文乱码问题/导入项目时忽略项目依赖关系.png

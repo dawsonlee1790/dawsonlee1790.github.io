@@ -10,12 +10,10 @@ tag:
 star: false
 category: blog
 author: dawsonlee
+
 ---
 
 
-Dawson Lee edited this page on Beijing, 2018/8/5
-
-<div class="breaker"></div>
 
   [1]:  /assets/posts/NetBeansIDE更改默认语言/找到netbeans.conf.PNG
 
