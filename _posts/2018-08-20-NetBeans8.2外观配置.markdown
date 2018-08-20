@@ -1,5 +1,5 @@
 ﻿---
-title: "NetBeans8.2外观配置"
+title: "NetBeans 8.2 外观配置"
 layout: post
 date: 2018-08-20
 image: 
@@ -114,6 +114,11 @@ A NetBeans Look And Feel plugin using Darcula of IntelliJ IDEA.
 
 <a id="code_style"></a>
 ##  微软雅黑 + Consolas 方案
+
+consolas字体是一款编程很好用的字体，专门为编程人员设计的字体，这一字体的特性是所有字符
+都具有相同的宽度，0和o分得很清楚，让编程人员看着更舒服。然而conloas默认只有英文，中文显示
+会乱码。所以就有人制作了微软雅黑 + Consolas字体。中文使用微软雅黑字体，英文显示Consolas
+字体。
 
 1. 下载字体资源并安装(我只尝试过在win10下安装该资源)
 
