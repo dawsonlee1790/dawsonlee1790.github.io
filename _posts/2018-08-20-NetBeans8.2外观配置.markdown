@@ -34,7 +34,7 @@ author: dawsonlee
 
 *  整体UI感觉巨丑无比（无解，慢慢的你会发现你觉得其实也还可以，并没有刚开始那么丑，**:)** 微笑脸 ）
 *  窗口字体好小（解决方法：[设置窗口字体大小](#change_win_size)）
-*  NetBeans 想像 Intellij IDEA 一样（解决方法：[Darcula 外观](#code_style)）
+*  NetBeans 想像 Intellij IDEA 一样（解决方法：[Darcula 外观](#darcula)）
 *  编辑器代码还是觉得不够舒服（解决方法：[微软雅黑 + Consolas 方案](#code_style)）
 
   ![初体验][1]
@@ -67,7 +67,7 @@ author: dawsonlee
 
 
 
-
+<a id="darcula"></a>
 ## Darcula 外观配置(这就是我自己喜欢的NetBeans UI风格,强烈推荐)
 
 A NetBeans Look And Feel plugin using Darcula of IntelliJ IDEA.
