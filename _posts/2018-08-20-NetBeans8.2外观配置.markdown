@@ -115,7 +115,7 @@ A NetBeans Look And Feel plugin using Darcula of IntelliJ IDEA.
 <a id="code_style"></a>
 ##  微软雅黑 + Consolas 方案
 
-1. 下载字体资源并安装(我只尝试过在win10下安装一下资源)
+1. 下载字体资源并安装(我只尝试过在win10下安装该资源)
 
     [字体资源下载: YaHei.Consolas.1.12.zip][14]
 
