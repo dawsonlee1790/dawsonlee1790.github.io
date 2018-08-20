@@ -23,6 +23,7 @@ author: dawsonlee
   [9]:  /assets/posts/NetBeans8.2外观配置/插件中心.png
   [10]:  /assets/posts/NetBeans8.2外观配置/首选外观.png
   [11]:  /assets/posts/NetBeans8.2外观配置/编辑器代码风格.png
+  [11-1]:  /assets/posts/NetBeans8.2外观配置/终端风格.png
   [12]:  /assets/posts/NetBeans8.2外观配置/darcula简单配置.png
   [13]:  /assets/posts/NetBeans8.2外观配置/darcula.png
 
@@ -96,12 +97,17 @@ author: dawsonlee
 
 ![编辑器代码风格][11]
 
-*  6.配置Darcula外观
+*  6.将终端风格也设为Dacula（如果你并不使用终端，那您可以跳过此步骤）
+
+![终端风格][11-1]
+
+*  7.配置Darcula外观
 
 我一般勾选第一行（同时将字号改为18）和第二行
 
 ![darcula简单配置][12]
 
-*  7.最终效果
+*  8.最终效果
 
 ![darcula][13]
+
