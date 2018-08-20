@@ -1,4 +1,4 @@
-﻿  [1]: /assets/posts/NetBeans快捷操作/封装字段.png
+  [1]: /assets/posts/NetBeans快捷操作/封装字段.png
   [2]: /assets/posts/NetBeans快捷操作/组件面板.png
   [3]: /assets/posts/NetBeans快捷操作/清爽的URL设置.png
 
