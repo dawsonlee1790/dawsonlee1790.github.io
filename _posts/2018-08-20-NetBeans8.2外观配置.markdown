@@ -1,4 +1,4 @@
-﻿---
+---
 title: "NetBeans 8.2 外观配置"
 layout: post
 date: 2018-08-20
