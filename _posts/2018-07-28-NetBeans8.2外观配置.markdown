@@ -12,14 +12,20 @@ author: dawsonlee
 
 ---
 
+  [1]:  /assets/posts/NetBeans8.2外观配置/初体验.PNG
+  [2]:  /assets/posts/NetBeans8.2外观配置/找到netbeans.conf.PNG
+  [3]:  /assets/posts/NetBeans8.2外观配置/添加字段.PNG
+  [4]:  /assets/posts/NetBeans8.2外观配置/大字体的NetBeans.PNG
+  [5]:  /assets/posts/NetBeans8.2外观配置/工具选项.PNG
+  [6]:  /assets/posts/NetBeans8.2外观配置/代码.PNG
+  [7]:  /assets/posts/NetBeans8.2外观配置/最终的NetBeans.PNG
+  [8]:  /assets/posts/NetBeans8.2外观配置/工具插件.png
+  [9]:  /assets/posts/NetBeans8.2外观配置/插件中心.png
+  [10]:  /assets/posts/NetBeans8.2外观配置/首选外观.png
+  [11]:  /assets/posts/NetBeans8.2外观配置/编辑器代码风格.png
+  [12]:  /assets/posts/NetBeans8.2外观配置/darcula简单配置.png
+  [13]:  /assets/posts/NetBeans8.2外观配置/darcula.png
 
-   [1]:  /assets/posts/NetBeans8.2外观配置/初体验.PNG
-   [2]:  /assets/posts/NetBeans8.2外观配置/找到netbeans.conf.PNG
-   [3]:  /assets/posts/NetBeans8.2外观配置/添加字段.PNG
-   [4]:  /assets/posts/NetBeans8.2外观配置/大字体的NetBeans.PNG
-   [5]:  /assets/posts/NetBeans8.2外观配置/工具选项.PNG
-   [6]:  /assets/posts/NetBeans8.2外观配置/代码.PNG
-   [7]:  /assets/posts/NetBeans8.2外观配置/最终的NetBeans.PNG
 
 ## 我对NetBeans的UI初体验
 
@@ -27,7 +33,8 @@ author: dawsonlee
 
 *  整体UI感觉巨丑无比（无解，慢慢的你会发现你觉得其实也还可以，并没有刚开始那么丑，**:)** 微笑脸 ）
 *  窗口字体好小（解决方法：[设置窗口字体大小](#change_win_size)）
-*  编辑器代码看久了疲劳（解决方法：[设置编辑器高亮风格](#code_style)）
+*  编辑器代码想换个风格（解决方法：[设置编辑器高亮风格](#code_style)）
+*  编辑器代码看久了疲劳（解决方法：[Darcula 外观](#code_style)）
 
   ![初体验][1]
 
@@ -66,9 +73,35 @@ author: dawsonlee
 
   ![代码][6]
 
-这就是我自己喜欢的NetBeans UI风格
-
-非常适合长时间编代码的工作
+最终外观：
 
   ![最终NetBeans][7]
 
+## Darcula 外观配置(这就是我自己喜欢的NetBeans UI风格,强烈推荐)
+
+*  1.工具 -> 插件(Tools -> Plugins)
+
+[工具插件][8] 
+
+*  2.在插件中心的可用插件中搜索`darcula`然后安装`Darcula LAF for NetBeans`
+
+[插件中心][9] 
+
+*  3.安装结束后重启IDE
+*  4.IDE Darcula外观未启用（如果启用可以跳过此步骤）
+
+[首选外观][10]
+
+*  5.编辑器Darcula代码风格未启用（如果启用可以跳过此步骤）
+
+[编辑器代码风格][11]
+
+*  6.配置Darcula外观
+
+我一般勾选第一行（同时将字号改为18）和第二行
+
+[darcula简单配置][12]
+
+*  7.最终效果
+
+[darcula][13]
