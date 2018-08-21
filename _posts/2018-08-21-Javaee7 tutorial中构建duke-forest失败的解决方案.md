@@ -42,8 +42,7 @@ externalLink: false
     ![打开pom.xml][2]
 
 3. 找到类似代码
-
-    {% highlight xml %}
+{% highlight xml %}
 <profile>
         <id>windows</id>
         <activation>
@@ -59,8 +58,7 @@ externalLink: false
 {% endhighlight %}
 	
 4.  修改为（添加`<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>`）
-
-    {% highlight xml %}
+{% highlight xml %}
 <profile>
         <id>windows</id>
         <activation>
