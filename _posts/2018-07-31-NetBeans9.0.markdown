@@ -1,4 +1,4 @@
-﻿---
+---
 title: "NetBeans9.0"
 layout: post
 date: 2018-07-31
@@ -18,7 +18,7 @@ author: dawsonlee
 
 ## NetBeans9.0 注册更新中心
 
-  ![更新中心][1]
+![更新中心][1]
 
 *  NetBeans8.2注册中心
 
@@ -28,7 +28,7 @@ author: dawsonlee
 
         http://plugins.netbeans.org/nbpluginportal/updates/8.2/catalog.xml.gz
 
-### 参考
+#### 参考
 
 [我最喜欢的NetBeans插件发生了什么？](https://blogs.apache.org/netbeans/entry/what-s-happened-to-my)
 
