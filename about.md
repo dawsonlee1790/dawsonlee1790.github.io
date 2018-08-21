@@ -1,21 +1,30 @@
 ---
 title: About
 layout: page
+
 ---
 ![Profile Image](/{{ site.picture }})
 
 
-| 熟悉 | 了解 |
-|:-|:-|
-| Java | 数据结构 |
-| JavaEE(EJB规范) | 算法|
-| 面向对象的分析和设计  | C / C++ |
-|| C# |
-|| .NET |
-|| Linux |
-|| Android |
-|| Python |
-|| XML + WebServer |
+## 技能
+
+*  熟悉
+
+    *  Java SE
+    *  Java EE
+    *  OOAD（面向对象的分析与设计）
+
+*  了解
+
+    *  数据结构
+    *  算法
+    *  C/C++
+    *  C#
+    *  .NET
+    *  Linux
+    *  Android
+    *  Python
+    *  XML & Webservice
 
 
 ## 在读书单
