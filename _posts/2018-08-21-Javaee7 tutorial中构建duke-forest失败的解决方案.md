@@ -35,11 +35,11 @@ externalLink: false
 
 ####  1.打开项目` /javaee-tutorial/examples`
 
-    ![打开example][1]
+![打开example][1]
 
 ####  2.打开项目`javaeetutorial->项目文件->pom.xml`
 
-    ![打开pom.xml][2]
+![打开pom.xml][2]
 
 ####  3.找到类似代码
 
@@ -75,8 +75,9 @@ externalLink: false
         </properties>
 </profile>
 {% endhighlight %}
+
 ####  5.启动JavaDB
 ####  6.启动GlassFish Server
 ####  7.鼠标右键项目`dukes-forest`构建
 	
-    ![构建][3]
+![构建][3]
