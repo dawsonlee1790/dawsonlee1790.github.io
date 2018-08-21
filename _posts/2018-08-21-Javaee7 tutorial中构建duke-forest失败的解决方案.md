@@ -42,37 +42,39 @@ externalLink: false
     ![打开pom.xml][2]
 
 3. 找到类似代码
-	
-		<profile>
-			<id>windows</id>
-			<activation>
-				<os>
-					<family>windows</family>
-				</os>
-			</activation>
-			<properties>
-				<glassfish.home.prefix>c:/</glassfish.home.prefix>
-				<glassfish.executables.suffix>.bat</glassfish.executables.suffix>
-			</properties>
-		</profile>
 
+    {% highlight xml %}
+    <profile>
+            <id>windows</id>
+            <activation>
+                    <os>
+                            <family>windows</family>
+                    </os>
+            </activation>
+            <properties>
+                    <glassfish.home.prefix>c:/</glassfish.home.prefix>
+                    <glassfish.executables.suffix>.bat</glassfish.executables.suffix>
+            </properties>
+    </profile>
+    {% endhighlight %}
 	
 4.  修改为（添加`<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>`）
 
-		<profile>
-			<id>windows</id>
-			<activation>
-				<os>
-					<family>windows</family>
-				</os>
-			</activation>
-			<properties>
-				<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>
-				<glassfish.home.prefix>c:/</glassfish.home.prefix>
-				<glassfish.executables.suffix>.bat</glassfish.executables.suffix>
-			</properties>
-		</profile>
-
+    {% highlight xml %}
+    <profile>
+            <id>windows</id>
+            <activation>
+                    <os>
+                            <family>windows</family>
+                    </os>
+            </activation>
+            <properties>
+                    <glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>
+                    <glassfish.home.prefix>c:/</glassfish.home.prefix>
+                    <glassfish.executables.suffix>.bat</glassfish.executables.suffix>
+            </properties>
+    </profile>
+    {% endhighlight %}
 
 5.  启动JavaDB
 6.  启动GlassFish Server
