@@ -21,6 +21,7 @@ author: dawsonlee
 
 将整个画面分成13*16的矩阵，每个元素对应者一个小矩形。然后用0代表黑格，1代表白墙，2代表蓝格……，这样就有了整幅图像的信息。然后移动就可以想象成，改变矩阵的坐标信息，形成一个新的矩阵，再重绘。这就是推箱子的基本原理。
 
+{% highlight c++ %}
 	#define BLACK	      0 //黑格:用于填充图像
 	#define WHITEWALL     1	//白墙:用于阻挡主角移动
 	#define BLUEWALL      2	//蓝格:用于表示可移动空间
@@ -29,6 +30,7 @@ author: dawsonlee
 	#define REDBOX	      5	//变色的箱子:用于表示这个点位置已经放置箱子
 	#define MAN	      6	//主角:用于表示主角位置
 	#define MANBALL       7 //主角站在点上
+{% endhighlight %}
 
 ![设计思路](/assets/posts/pushbox/设计思路.png)
 
@@ -72,6 +74,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
     
 文本文件中的矩阵读取操作源代码：
 
+{% highlight c++ %}
     #include<stdio.h>
     #include<stdlib.h>
 
@@ -99,9 +102,11 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
        	}
     	return 0;
     }
+{% endhighlight %}
 
 接下我们要把TXT文件的读取矩阵的功能，写在一个readmap()函数中，实现功能的模块化。并加多一项功能，就是查找出，MAN的位置。
 
+{% highlight c++ %}
 	//map[13][16]是形参，其中&man_i表是的是man_i的引用，引用传递的意义在于：传入参数会因函数中的操作而改变
 	int readmap(int map[13][16], int &man_i, int &man_j)
 	{
@@ -125,6 +130,8 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 			}
 		return 0;
 	}
+{% endhighlight %}
+
 
 ###  5.接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
@@ -138,6 +145,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 
 绘制操作的源代码：
 
+{% highlight c++ %}
 	#include<stdio.h>
 	#include<stdlib.h>
 	#include<graphics.h>
@@ -252,7 +260,8 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 		}
 		ege::delimage(img);
 	}
-	
+{% endhighlight %}	
+
 
 ###  6.实现图像的绘制以后那我们就应该实现图像的移动了。
 
@@ -264,6 +273,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 
 然后就可以开始写`move()`函数，实现`MAN`的移动。`move()`函数源代码
 
+{% highlight c++ %}
 	/*
 	传入函数的参数 get表示用户输入的键盘按键，传入实时数组map的信息，传入实时MAN的位置信息man_i，man_j。
 	*/
@@ -403,11 +413,11 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 			break;
 		}
 	}
-
+{% endhighlight %}
 
 写好`move()`函数后，我们就可以实现推箱子的功能了。整合后的源代码:
 
-
+{% highlight c++ %}
 	#include<stdio.h>
 	#include<stdlib.h>
 	#include<graphics.h>
@@ -669,6 +679,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 			break;
 		}
 	}
+{% endhighlight %}
 
 
 ###  7.最后，我们给窗口载入一张完美的背景图片，至此就可以实现完整推箱子小游戏了。
@@ -678,6 +689,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 
 最后整合的代码就是：
 
+{% highlight c++ %}
 	/*
 	作者:DawsonLee
 	Email:dawsonlee1790@foxmail.com
@@ -955,6 +967,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
 			break;
 		}
 	}
+{% endhighlight %}
 
 ###  8.附上整个工程项目的文件
 *  [View on GitHub][github-view-pushbox]
