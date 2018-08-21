@@ -1,4 +1,4 @@
-﻿---
+---
 title: "NetBeans导入Eclipse项目 由于两个IDE默认编码导致的中文乱码问题"
 layout: post
 date: 2018-08-05
@@ -13,7 +13,6 @@ author: dawsonlee
 
 ---
 
-
   [1]:  /assets/posts/NetBeans导入Eclipse项目-由于两个IDE默认编码导致的中文乱码问题/导入项目.png
   [2]:  /assets/posts/NetBeans导入Eclipse项目-由于两个IDE默认编码导致的中文乱码问题/导入项目时忽略项目依赖关系.png
   [3]:  /assets/posts/NetBeans导入Eclipse项目-由于两个IDE默认编码导致的中文乱码问题/无法使用utf-8安全的打开.png
@@ -25,7 +24,7 @@ author: dawsonlee
 
 
 
-##  NetBeans导入Eclipse项目
+##  1.NetBeans导入Eclipse项目
 
 **温馨提示：请使用备份的项目进行操作**
 
@@ -33,17 +32,17 @@ author: dawsonlee
 
 ![导入项目时忽略项目依赖关系][2]
  
-##  出现的问题
+##  2.出现的问题
 
 ![无法使用utf-8安全的打开][3]
 
-##  选择"是"以后发现中文乱码
+##  3.选择"是"以后发现中文乱码
 
 **原因:发现eclipse的默认编码是GBK,而netbeans的默认编码是UTF-8**
 
 ![发现eclipse的默认编码是GBK][4]
 
-##  然后
+##  4.然后
 
 ![netbeans-gkb][5]
 
@@ -61,11 +60,11 @@ author: dawsonlee
 
 [https://netbeans.org/kb/74/java/import-eclipse_zh_CN.html#build](https://netbeans.org/kb/74/java/import-eclipse_zh_CN.html#build) 
 
-##  所以我们应该
+##  5.所以我们应该
 
 ![取消勾选在编译时保存][7]
 
-##  最后右键项目->清理并构建
+##  6.最后右键项目->清理并构建
 
 ![右键清理并构建][8]
 
