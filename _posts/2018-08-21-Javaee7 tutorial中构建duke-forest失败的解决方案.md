@@ -57,7 +57,6 @@ externalLink: false
                 </properties>
         </profile>
         {% endhighlight %}
-	
 4.  修改为（添加`<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>`）
         
         {% highlight xml %}
@@ -75,7 +74,6 @@ externalLink: false
                 </properties>
         </profile>
         {% endhighlight %}
-
 5.  启动JavaDB
 6.  启动GlassFish Server
 7.  鼠标右键项目`dukes-forest`构建
