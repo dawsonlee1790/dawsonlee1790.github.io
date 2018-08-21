@@ -90,8 +90,7 @@ author: dawsonlee
 >  即使不报错还是会导致**用户权限约束**失效
 
 
----
+####  参考
 
-["文章参考GlassFish JDBC Realm Group Membership"](https://stackoverflow.com/questions/6809081/glassfish-jdbc-realm-group-membership)
+*  ["GlassFish JDBC Realm Group Membership"](https://stackoverflow.com/questions/6809081/glassfish-jdbc-realm-group-membership)
 
----
