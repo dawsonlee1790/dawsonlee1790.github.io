@@ -104,4 +104,4 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://dawsonlee1790.github.io
