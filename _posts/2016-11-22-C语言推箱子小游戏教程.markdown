@@ -36,15 +36,15 @@ author: dawsonlee
 
 ##  步骤
 
-####  1.编译环境：[Visual Studio Community 2015][VS2015]
+####  1. 编译环境：[Visual Studio Community 2015][VS2015]
 
 Tip:
 *  您也可以自行百度或者google Visual Studio Community 2015的其它下载途径
 *  您也可以尝试使用Visual Studio其它版本，但有可能会出现未知问题
 
-####  2.要给VS2015[安装EGE图形库][1]
+####  2. 要给VS2015[安装EGE图形库][1]
 
-####  3.要参考EGE图形库帮助文档
+####  3. 要参考EGE图形库帮助文档
 *  [bitbucket][2]
 *  [xege.org][3]
 
@@ -55,7 +55,7 @@ Tip:如果链接失效，请自行百度或者google"EGE图形库帮助文档"
   [2]: http://bitbucket.org/wysaid/ege-manual  "bitbucket的EGE图形库帮助文档"
   [3]: http://xege.org/manual/ "xege.org的EGE图形库帮助文档"
   
-####  4.刚才我们说到，图像的背后对应着一个矩阵，我们可以考虑将矩阵的信息存储在一个MAP.txt文件中，在程序运行时读取。下面我来介绍，在文件中读取一个矩阵。
+####  4. 刚才我们说到，图像的背后对应着一个矩阵，我们可以考虑将矩阵的信息存储在一个MAP.txt文件中，在程序运行时读取。下面我来介绍，在文件中读取一个矩阵。
 首先我们得有一个TXT文件:`MAP.txt`(一定确保路径放置正确),它存储着这样一个`13*16`的矩阵
 
     0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	
@@ -133,7 +133,7 @@ int readmap(int map[13][16], int &man_i, int &man_j)
 {% endhighlight %}
 
 
-####  5.接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
+####  5. 接下来我们实现在窗口中，把矩阵信息转变成图像。原理就是，将图片贴在窗口上。
 
 *  图片资源[pic.zip][pic]（把当中的pic文件夹解压，存放在正确路径中，如果路径不正确会导致窗口中没有图像）
 
@@ -263,7 +263,7 @@ void darm(int a, int ii, int jj)
 {% endhighlight %}	
 
 
-####  6.实现图像的绘制以后那我们就应该实现图像的移动了。
+####  6. 实现图像的绘制以后那我们就应该实现图像的移动了。
 
 ![向右移动](/assets/posts/pushbox/向右移动.png)
 
@@ -682,7 +682,7 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 {% endhighlight %}
 
 
-####  7.最后，我们给窗口载入一张完美的背景图片，至此就可以实现完整推箱子小游戏了。
+####  7. 最后，我们给窗口载入一张完美的背景图片，至此就可以实现完整推箱子小游戏了。
 
 实际效果图：
 ![效果图-背景](/assets/posts/pushbox/效果图-背景.png)
@@ -969,7 +969,7 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
 }
 {% endhighlight %}
 
-####  8.附上整个工程项目的文件
+####  8. 附上整个工程项目的文件
 *  [View on GitHub][github-view-pushbox]
 *  [GitHub Download .zip][download-zip-pushbox]
 *  [百度云][baiduyun-pushbox]
@@ -978,14 +978,14 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
   [download-zip-pushbox]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/pushbox "pushbox分支zip下载"
   [baiduyun-pushbox]:  http://pan.baidu.com/s/1o8poxzc
   
-####  9.通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
+####  9. 通过学习，您还可以加上诸多功能，比如音乐的播放，用户登陆和地图的绘制等。下面给一个有上述功能的推箱子游戏
  
-####  源码版本
-*  [View on GitHub][github-view-master]
-*  [GitHub Download .zip][baiduyun-master]
+*  源码版本
+    *  [View on GitHub][github-view-master]
+    *  [GitHub Download .zip][baiduyun-master]
 
-####  Release版本（可执行文件 .exe）
-*  [百度云][baiduyun-master]
+*  Release版本（可执行文件 .exe）
+    *  [百度云][baiduyun-master]
 
   [github-view-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/tree/master  "master分支"
   [baiduyun-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/master "master分支zip下载"
