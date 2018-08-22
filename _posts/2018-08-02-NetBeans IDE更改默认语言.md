@@ -5,8 +5,7 @@ date: 2018-08-02
 image: 
 headerImage: false
 tag:
-- NetBeans 9.0
-- NetBeans 8.2
+- NetBeans
 star: false
 category: blog
 author: dawsonlee
