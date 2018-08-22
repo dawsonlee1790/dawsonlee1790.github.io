@@ -1,4 +1,4 @@
-﻿---
+---
 title: "window 10下Hyper-V PowerShell Module is not available报错解决方法"
 layout: post
 date: 2018-07-14
@@ -26,6 +26,7 @@ author: dawsonlee
 
 1.  下载0.13.0版本docker-machine命令。点击下载：[32位系统][1]或[64位系统][2]
 2.  下载完毕后，改名并替换”C:\Program Files\Docker\Docker\resources\bin”目录下的“docker-machine.exe”的文件，原文件最好备份一下。
+
 ##  参考文档
 [https://blog.csdn.net/harxingxing/article/details/80495841](https://blog.csdn.net/harxingxing/article/details/80495841)
 
