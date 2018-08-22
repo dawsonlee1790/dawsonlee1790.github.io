@@ -8,7 +8,7 @@ tag:
 - C语言推箱子小游戏（EGE图形库版）
 star: false
 projects: true
-category: project
+category: projects
 author: dawsonlee
 
 ---
