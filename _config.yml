@@ -31,7 +31,7 @@ analytics-google: 'UA-121646861-1'
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: dawsonlee1790 # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [blog, projects] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
@@ -88,7 +88,7 @@ show-tags: true
 related: true
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: [blog，projects]
 
 # show author block at the end of a post ?
 show-author: true
