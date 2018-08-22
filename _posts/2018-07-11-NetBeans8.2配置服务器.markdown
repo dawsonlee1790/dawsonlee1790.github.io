@@ -1,4 +1,4 @@
-﻿---
+---
 title: "NetBeans8.2配置服务器"
 layout: post
 date: 2018-07-11
