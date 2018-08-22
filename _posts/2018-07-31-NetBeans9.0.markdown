@@ -30,7 +30,7 @@ author: dawsonlee
 
 #### 参考
 
-[我最喜欢的NetBeans插件发生了什么？](https://blogs.apache.org/netbeans/entry/what-s-happened-to-my)
+*  [我最喜欢的NetBeans插件发生了什么？](https://blogs.apache.org/netbeans/entry/what-s-happened-to-my)
 
 
 
