@@ -1,5 +1,5 @@
 ---
-title: "GlassFish4.1.x REST API生成Json报错"
+title: "GlassFish 4.1 REST API生成Json报错"
 layout: post
 date: 2018-07-11
 image: 
