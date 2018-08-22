@@ -14,6 +14,8 @@ author: dawsonlee
 
 
    [1]:  /assets/posts/NetBeans9.0/更新中心.PNG
+   [2]:  http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
+   [3]:  http://plugins.netbeans.org/nbpluginportal/updates/8.2/catalog.xml.gz
 
 
 ## NetBeans9.0 注册更新中心
@@ -21,12 +23,12 @@ author: dawsonlee
 ![更新中心][1]
 
 *  NetBeans8.2注册中心
-
-        http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
+    
+    [http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz][2]
 
 *  插件门户
 
-        http://plugins.netbeans.org/nbpluginportal/updates/8.2/catalog.xml.gz
+    [http://plugins.netbeans.org/nbpluginportal/updates/8.2/catalog.xml.gz][3]
 
 #### 参考
 
