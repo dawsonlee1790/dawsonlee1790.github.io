@@ -5,8 +5,8 @@ date: 2018-07-11
 image: 
 headerImage: false
 tag:
-- NetBeans8.2
-- GlassFish4.1
+- NetBeans 8.2
+- GlassFish 4.1
 star: false
 category: blog
 author: dawsonlee
