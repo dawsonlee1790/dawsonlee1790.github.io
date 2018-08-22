@@ -1,12 +1,12 @@
 ---
-title: "GlassFish配置JDBCRealm"
+title: "GlassFish配置JDBC Realm"
 layout: post
 date: 2018-07-10
 image: 
 headerImage: false
 tag:
 - GlassFish
-- JDBCRealm
+- JDBC Realm
 star: false
 category: blog
 author: dawsonlee

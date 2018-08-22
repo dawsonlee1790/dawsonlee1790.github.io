@@ -1,11 +1,11 @@
 ---
-title: "NetBeans9.0"
+title: "NetBeans 9.0"
 layout: post
 date: 2018-07-31
 image: 
 headerImage: false
 tag:
-- NetBeans9.0
+- NetBeans 9.0
 star: false
 category: blog
 author: dawsonlee

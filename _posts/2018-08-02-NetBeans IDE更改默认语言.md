@@ -1,12 +1,12 @@
 ---
-title: "NetBeansIDE更改默认语言"
+title: "NetBeans IDE更改默认语言"
 layout: post
 date: 2018-08-02
 image: 
 headerImage: false
 tag:
-- NetBeans9.0
-- NetBeans8.2
+- NetBeans 9.0
+- NetBeans 8.2
 star: false
 category: blog
 author: dawsonlee
