@@ -61,7 +61,6 @@ author: dawsonlee
 >  **取消选中**Apache TomEE的服务器属性的“ 平台”选项卡上的“ 使用IDE代理设置”复选框
 
   ![TomEE启动失败解决][6.1]
-  [TomEE启动但Netbeans给出“启动失败”错误的解决方案参考][6.2]
 
 ##  WildFly应用服务器
 *  [WildFly应用服务器下载][7]
@@ -88,3 +87,6 @@ author: dawsonlee
   ![启动WildFly应用服务器][11]
 
 
+#### 参考
+
+* [TomEE启动但Netbeans给出“启动失败”错误的解决方案参考][6.2]
