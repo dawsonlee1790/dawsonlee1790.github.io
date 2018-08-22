@@ -1,11 +1,11 @@
 ---
-title: "NetBeans8.2配置服务器"
+title: "NetBeans 8.2配置服务器"
 layout: post
 date: 2018-07-11
 image: 
 headerImage: false
 tag:
-- NetBeans8.2
+- NetBeans 8.2
 - WildFly
 - TomEE
 star: false
