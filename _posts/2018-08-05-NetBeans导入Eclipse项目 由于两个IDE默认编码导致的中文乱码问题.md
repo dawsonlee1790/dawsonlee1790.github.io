@@ -6,7 +6,7 @@ image:
 headerImage: false
 tag:
 - Eclipse
-- NeBeans
+- NetBeans
 star: false
 category: blog
 author: dawsonlee
