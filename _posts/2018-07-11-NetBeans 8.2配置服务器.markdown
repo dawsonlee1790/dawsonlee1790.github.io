@@ -5,7 +5,7 @@ date: 2018-07-11
 image: 
 headerImage: false
 tag:
-- NetBeans 8.2
+- NetBeans
 - WildFly
 - TomEE
 star: false
