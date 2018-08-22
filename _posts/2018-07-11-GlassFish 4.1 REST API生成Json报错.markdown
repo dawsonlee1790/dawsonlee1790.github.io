@@ -24,13 +24,13 @@ author: dawsonlee
 
 ##  解决方法
 
-*  [下载org.eclipse.persistence.moxy-2.6.1.jar][1]
+1.  [下载org.eclipse.persistence.moxy-2.6.1.jar][1]
 
-![下载org.eclipse.persistence.moxy-2.6.1.jar][2]
+    ![下载org.eclipse.persistence.moxy-2.6.1.jar][2]
 
-*  替换路径 `/glassfish / modules / org.eclipse.persistence.moxy.jar`
+2.  替换路径 `/glassfish / modules / org.eclipse.persistence.moxy.jar`
 
-*  最后不要忘记关闭并重新打开NetBeans8.2 IDE并重启GlassFish
+3.  最后不要忘记关闭并重新打开NetBeans8.2 IDE并重启GlassFish
 
-### 参考
+#### 参考
 *  [Glassfish error when producing JSON][3]
