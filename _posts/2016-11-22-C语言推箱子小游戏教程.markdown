@@ -2,14 +2,14 @@
 title: "C语言推箱子小游戏教程"
 layout: post
 date: 2018-07-03
-img: 
+image: 
 headerImage: false
 tag:
 - C语言推箱子小游戏（EGE图形库版）
 star: false
 projects: true
+category: project
 author: dawsonlee
-permalink: C语言推箱子小游戏教程
 
 ---
 

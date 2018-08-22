@@ -1,9 +1,0 @@
-# humanstxt.org/
-
-# TEAM
-
-	Sérgio Kopplin's Indigo Theme, further customization by Arti Annaswamy
-
-# TECHNOLOGY
-
-	HTML5, CSS3, JS, JEKYLL

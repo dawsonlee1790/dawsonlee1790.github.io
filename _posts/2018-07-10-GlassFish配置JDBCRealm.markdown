@@ -2,11 +2,13 @@
 title: "GlassFish配置JDBCRealm"
 layout: post
 date: 2018-07-10
-tag: 
+image: 
+headerImage: false
+tag:
 - GlassFish
 - JDBCRealm
-blog: true
-draft: false
+star: false
+category: blog
 author: dawsonlee
 
 ---
