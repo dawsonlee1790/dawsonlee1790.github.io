@@ -5,7 +5,7 @@ date: 2018-08-03
 image: 
 headerImage: false
 tag:
-- NetBeans8.2
+- NetBeans 8.2
 - cygwin
 - windows
 star: false
