@@ -57,8 +57,8 @@ authors:
     dawsonlee:
         name: Dawson Lee
         bio: A man who loves to watch Korean dramas
-        external-image: false
-        picture: assets/images/dd-portrait.jpg
+        url: /index
+        picture: /assets/images/dd-portrait.jpg
         email: dawsonlee1790@qq.com
 
 
