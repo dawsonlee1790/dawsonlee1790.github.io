@@ -58,7 +58,7 @@ externalLink: false
 </profile>
 {% endhighlight %}
 
-####  4.修改为（添加`<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>`）
+####  4.添加`<glassfish.home>${glassfish.home.prefix}/glassfish4</glassfish.home>`
         
 {% highlight xml %}
 <profile>
