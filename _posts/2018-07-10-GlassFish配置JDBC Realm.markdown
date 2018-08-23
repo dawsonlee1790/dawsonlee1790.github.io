@@ -41,17 +41,19 @@ author: dawsonlee
 
 ##  Glassfish JDBCRealm配置片段来自domain.xml
 
-    <auth-realm name="MyRealm" classname="com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm">
-      <property description="null" name="jaas-context" value="jdbcRealm"></property>
-      <property name="encoding" value="Hex"></property>
-      <property description="null" name="password-column" value="PASSWORD"></property>
-      <property name="datasource-jndi" value="jdbc/myDS"></property>
-      <property name="group-table" value="USERS_GROUPS"></property>
-      <property name="user-table" value="USERS"></property>
-      <property description="null" name="group-name-column" value="GROUPID"></property>
-      <property name="digest-algorithm" value="SHA-512"></property>
-      <property description="null" name="user-name-column" value="USERID"></property>
-    </auth-realm>
+{% highlight xml %}
+<auth-realm name="MyRealm" classname="com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm">
+  <property description="null" name="jaas-context" value="jdbcRealm"></property>
+  <property name="encoding" value="Hex"></property>
+  <property description="null" name="password-column" value="PASSWORD"></property>
+  <property name="datasource-jndi" value="jdbc/myDS"></property>
+  <property name="group-table" value="USERS_GROUPS"></property>
+  <property name="user-table" value="USERS"></property>
+  <property description="null" name="group-name-column" value="GROUPID"></property>
+  <property name="digest-algorithm" value="SHA-512"></property>
+  <property description="null" name="user-name-column" value="USERID"></property>
+</auth-realm>
+{% endhighlight %}
 
 注意，该group-name-column属性的值为GROUPID，映射到GROUPID连接表的列USERS_GROUPS而不是组表GROUPS。
 这是因为JDBCRealm发出以下SQL语句（如果您反编译com.sun.enterprise.security.auth.realm.jdbc.JDBCRealm该类）
