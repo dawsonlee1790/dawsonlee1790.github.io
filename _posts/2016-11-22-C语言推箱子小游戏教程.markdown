@@ -32,7 +32,7 @@ author: dawsonlee
 #define MANBALL       7 //主角站在点上
 {% endhighlight %}
 
-![设计思路](/assets/posts/pushbox/设计思路.png)
+![设计思路]({{ site.url }}/assets/posts/pushbox/设计思路.png)
 
 ##  步骤
 
