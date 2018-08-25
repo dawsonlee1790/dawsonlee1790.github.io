@@ -3,7 +3,7 @@ title: About
 layout: page
 
 ---
-![Profile Image](/assets/images/dd-portrait2.jpg)
+![Profile Image]({{ site.url }}/assets/images/dd-portrait2.jpg)
 
 
 ## 技能
