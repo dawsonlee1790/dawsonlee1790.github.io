@@ -9,7 +9,10 @@ author: dawsonlee
 
 ---
 
-
+  [2.11]: /assets/posts/《Applying UML and Patterns》读书笔记/2.11-UP阶段.png
+  [2.11-en]: /assets/posts/《Applying UML and Patterns》读书笔记/2.11-UP阶段-en.png
+  [2.12]: /assets/posts/《Applying UML and Patterns》读书笔记/2.12-开发案例.png
+     
 
 ## 第1章：绪论
 
@@ -96,4 +99,13 @@ UP的创始人并没有为其赋予重量级或非敏捷的含义。实际上，
 * **业务建模**： 领域模型制品
 * **需求**： 用例模型及其补充性的规格说明制品。
 * **设计**： 设计模型
+
+![UP阶段][2.11]
+
+![UP阶段-en][2.11-en]
+
+
+#### 开发案例
+
+![开发案例][2.12]
 
