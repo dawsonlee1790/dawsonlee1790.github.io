@@ -1,5 +1,7 @@
 ---
-layout：post
+title: "《Applying UML and Patterns》读书笔记"
+layout: post
+date: 2018-08-26
 tag:
 - 读书笔记
 category: blog
