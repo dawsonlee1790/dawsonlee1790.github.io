@@ -1,5 +1,8 @@
 ---
 layout：post
+tag:
+- 读书笔记
+category: blog
 author: dawsonlee
 
 ---
