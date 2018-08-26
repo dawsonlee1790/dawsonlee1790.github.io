@@ -33,6 +33,8 @@
 
 #### 脱离鼠标快捷键
 
+ 
+
 * `ctrl + Tab`: 窗口选择
 * `ctrl + Q`: 上一个编辑位置
 * `ctrl + End`: 移动插入点至文档结尾
@@ -40,7 +42,20 @@
 * `ctrl + DOWN`: 向下滚动
 * `ctrl + E`: 删除行
 * `ctrl + W || ctrl + F4`: 关闭窗口 
+* `ctrl + G`: 转至行 (光标转到,但是编辑区域没有转到,则关闭文件再打开)
+
+使用书签
+
+* `Ctrl-Shift-M`: 开启/关闭书签
+* `Ctrl-Shift-逗号`: 转至上一个书签
+* `Ctrl-Shift-句点`: 转至下一个书签
+
 
 #### 起始页
 
 帮助 -> 起始页
+
+
+#### 参考
+
+* [NetBeans IDE Java编辑器中的代码帮助：参考指南](https://netbeans.org/kb/docs/java/editor-codereference.html#editor-features)
