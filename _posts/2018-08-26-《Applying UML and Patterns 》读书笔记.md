@@ -15,7 +15,7 @@ author: dawsonlee
   [9]: /assets/posts/《Applying UML and Patterns》读书笔记/9-UP制品.png
   [15.4]: /assets/posts/《Applying UML and Patterns》读书笔记/15.4-生命线框图.png
   [15.4-1]: /assets/posts/《Applying UML and Patterns》读书笔记/消息返回.png
-  [15.4-2]: /assets/posts/《Applying UML and Patterns》读书笔记/发送给自身的消息.png
+  [15.4-2]: /assets/posts/《Applying UML and Patterns》读书笔记/发给自身的消息.png
   [15.4-3]: /assets/posts/《Applying UML and Patterns》读书笔记/实例的创建.png
   [15.4-4]: /assets/posts/《Applying UML and Patterns》读书笔记/图框操作符.png
   [15.4-5]: /assets/posts/《Applying UML and Patterns》读书笔记/关联交互图.png
