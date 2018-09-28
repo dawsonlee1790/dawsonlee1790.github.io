@@ -12,8 +12,6 @@ and my major is software engineering.
 
 What makes me unique? I'm a man who loves to watch Korean dramas.
 
-This is my first time at work in my life. It's my honor to join the Hulu team. 
-I will work hard here and enjoy this journey.
 
 ## 技能
 
