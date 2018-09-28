@@ -21,6 +21,7 @@ tag:
   [3]: /assets/posts/NetBeans创建能被Ant运行的build.xml/新建build.xml.png
   [4]: /assets/posts/NetBeans创建能被Ant运行的build.xml/运行目标.png
   [5]: /assets/posts/NetBeans创建能被Ant运行的build.xml/运行结果.png
+  [6]: https://wizardforcel.gitbooks.io/tutorialspoint-java/ant/83.html
 
 ## 问题描述
 
@@ -50,3 +51,7 @@ NetBeans自带的Ant运行文件。
 10. 在 **输出** 窗（窗口->输出;或者`ctrl+4`）中可以看到运行结果
 
     ![运行结果][5]
+
+#### 附录
+
+* [Apache ANT 教程][6]
