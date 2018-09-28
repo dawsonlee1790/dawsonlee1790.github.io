@@ -20,7 +20,7 @@ tag:
   [2]: /assets/posts/NetBeans创建能被Ant运行的build.xml/模板管理器.png
   [3]: /assets/posts/NetBeans创建能被Ant运行的build.xml/新建build.xml.png
   [4]: /assets/posts/NetBeans创建能被Ant运行的build.xml/运行目标.png
-  [4]: /assets/posts/NetBeans创建能被Ant运行的build.xml/运行结果.png
+  [5]: /assets/posts/NetBeans创建能被Ant运行的build.xml/运行结果.png
 
 ## 问题描述
 
