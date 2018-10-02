@@ -7,7 +7,7 @@ category: blog
 image: 
 headerImage: false
 
-title: "NetBeans远程连接Centos7中docker"
+title: "NetBeans远程连接CentOS 7中docker"
 date: 2018-10-02
 author: dawsonlee
 tag:
@@ -16,9 +16,9 @@ tag:
 
 ---
 
-  [1]: /assets/posts/2018-10-02-NetBeans远程连接Centos7中docker/daemon.png
-  [2]: /assets/posts/2018-10-02-NetBeans远程连接Centos7中docker/添加Docker.png
-  [3]: /assets/posts/2018-10-02-NetBeans远程连接Centos7中docker/配置URL.png
+  [1]: /assets/posts/2018-10-02-NetBeans远程连接CentOS 7中docker/daemon.png
+  [2]: /assets/posts/2018-10-02-NetBeans远程连接CentOS 7中docker/添加Docker.png
+  [3]: /assets/posts/2018-10-02-NetBeans远程连接CentOS 7中docker/配置URL.png
 
 ## 第一步:Centos7中Docker开启远程服务
 
