@@ -52,13 +52,29 @@ tag:
 
         $ ps -ef|grep docker
 
+    执行命令后会看到类似输出
+
+        root     26208     1  0 23:51 ?        00:00:00 /usr/bin/dockerd -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock
+
 6. 查看系统的网络端口，发现tcp的2375端口，的确是docker的守护进程在监听
 
         $ netstat -tulp
 
+    执行命令后会看到类似输出
+    
+        Active Internet connections (only servers)
+        Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name 
+        tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN      886/sshd
+        tcp6       0      0 [::]:2375               [::]:*                  LISTEN      26208/dockerd 
+
 7. (可以跳过)用另一台linux中的docker做客户端,去远程访问该centos7中的docker
 
-        $ sudo docker -H tcp://192.168.196.141:2375 info
+        $ sudo docker -H tcp://192.168.196.141:2375 images
+
+    执行命令后会看到类似输出 
+
+        REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+        mysql               5.6                 f8fe303bcac2        4 days ago          298MB
 
     * 这两台linux都是安装在vmware中的虚拟机
     * `192.168.196.141`是局域网的地址
