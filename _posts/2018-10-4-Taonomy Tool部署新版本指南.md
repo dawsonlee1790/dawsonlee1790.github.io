@@ -27,8 +27,7 @@ tag:
     * hostname: `dl03`
     * port: `3306`
     * user name: 'root'
-    * password: 
-                <div class="spoiler"><code>greathulu</code></div>
+    * password: `greathulu`
     ![connectdl03][2]
 
 3. 修改`taxonomy`数据库的一些数据
