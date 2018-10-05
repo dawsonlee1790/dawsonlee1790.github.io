@@ -8,7 +8,7 @@ image:
 headerImage: false
 
 title: "Taonomy Tool部署新版本指南"
-date: 2018-10-4
+date: 2018-10-5
 author: dawsonlee
 tag:
 - tagName
@@ -16,9 +16,10 @@ tag:
 ---
 
   [1]: https://dev.mysql.com/downloads/workbench/
-  [2]: /assets/posts/2018-10-4-Taonomy Tool部署新版本指南/connectdl03.png
-  [3]: /assets/posts/2018-10-4-Taonomy Tool部署新版本指南/tag.png
-  [4]: /assets/posts/2018-10-4-Taonomy Tool部署新版本指南/ducks.png
+  [2]: /assets/projects/2018-10-4-Taonomy Tool部署新版本指南/connectdl03.png
+  [3]: /assets/projects/2018-10-4-Taonomy Tool部署新版本指南/tag.png
+  [4]: /assets/projects/2018-10-4-Taonomy Tool部署新版本指南/ducks.png
+  [5]: /assets/projects/2018-10-4-Taonomy Tool部署新版本指南/taxonomyDB.png
 
 
 1. 使用[Mysql WorkBench 6.3.10][1]
@@ -55,4 +56,13 @@ tag:
 
         $ sudo docker run -itd --net=host dawsonlee1790/taxonomy:3.0
 
+#### 附录
+
+* 新功能Demo视频
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DkWoS2SHtFM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+* 数据库ER图
+
+    ![taxonomyDB][5]
         
