@@ -26,7 +26,7 @@ tag:
 
     * hostname: `dl03`
     * port: `3306`
-    * user name: 'root'
+    * user name: `root`
     * password: `greathulu`
     ![connectdl03][2]
 
