@@ -33,11 +33,14 @@ What makes me unique? I'm a man who loves to watch Korean dramas.
     *  Python
     *  XML & Webservice
 
+## 读完书单
+
+* 《编写有效用例》(美) Alistair Cockburn
 
 ## 在读书单
 
 * 《Applying UML and Patterns》Craig Larman
-* 《编写有效用例》(美) Alistair Cockburn 
+* 《Java EE开发的颠覆者：Spring Boot实战》汪云飞
 
 ## 计划书单
 
