@@ -148,4 +148,9 @@ Spring通过@Scheduled支持多种类型的计划任务，包含cron、fix、Del
 
 MVC只存在三层架构的展示层，M实际上数据模型，是包含数据的对象。（本人的小思考：是否可以理解为DTO-Data Transfer Object）
 
+## 4.2 Spring MVC项目快速搭建
+
+* 在Servlet 3.0+中，在SpringMVC里实现WebApplicationInitializer接口便可实现等同于web.xml的配置。
+* ViewResolver这是SpringMVC视图（JSP下就是html）渲染的核心机制
+
 # 第六章 Spring Boot基础
