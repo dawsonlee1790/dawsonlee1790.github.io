@@ -153,4 +153,31 @@ MVC只存在三层架构的展示层，M实际上数据模型，是包含数据�
 * 在Servlet 3.0+中，在SpringMVC里实现WebApplicationInitializer接口便可实现等同于web.xml的配置。
 * ViewResolver这是SpringMVC视图（JSP下就是html）渲染的核心机制
 
+# 第五章 Spring Boot概述
+
 # 第六章 Spring Boot基础
+
+## 6.5 Spring Boot运行原理
+
+# 第七章 SpringBoot的Web开发
+
+## 7.2 Thymeleaf模版引擎
+
+## 7.3 Web相关配置
+
+## 7.4 Tomcat配置
+
+## 7.5 Favicon配置
+
+## 7.6 WebSocket
+
+* 通过@EnableWebSocketMessageBroker注解开启使用STOMP协议来传输基于代理（message broker）的消息
+
+## 7.7 基于Bootstrap和AngularJS的现代Web应用
+
+# Spring Boot的数据访问
+
+## 8.1 引入Docker
+
+## 8.2 Spring Data JPA
+
