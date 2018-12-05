@@ -15,7 +15,7 @@ tag:
 
 ---
 
-  [1]: /_post/2018-12-05-SpringBoot+Kotlin遇到的一些坑（持续更新）/gradle.png
+  [1]: /_posts/2018-12-05-SpringBoot+Kotlin遇到的一些坑（持续更新）/gradle.png
 
 ## Spring Data Jpa
 
