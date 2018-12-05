@@ -11,11 +11,11 @@ title: "SpringBoot+Kotlin遇到的一些坑（持续更新）"
 date: 2018-12-05
 author: dawsonlee
 tag:
-- tagName
+- Spring Boot
 
 ---
 
-  [1]: gradle.png
+  [1]: /_post/2018-12-05-SpringBoot+Kotlin遇到的一些坑（持续更新）/gradle.png
 
 ## Spring Data Jpa
 
@@ -25,6 +25,6 @@ tag:
 
 项目中使用kotlin-jpa插件（gradle和maven都可以）
 
-build.gradle
+    build.gradle
 
 ![gradle][1]
