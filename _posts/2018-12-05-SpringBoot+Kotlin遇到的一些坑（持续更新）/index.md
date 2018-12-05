@@ -28,4 +28,4 @@ tag:
     build.gradle
 
 ![gradle][1]
-![gradle](gradle.png)
+![gradle2](gradle.png)
