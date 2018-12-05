@@ -15,7 +15,7 @@ tag:
 
 ---
 
-  [1]: /gradle.png
+  [1]: gradle.png
 
 ## Spring Data Jpa
 
