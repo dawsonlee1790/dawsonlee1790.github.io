@@ -1,0 +1,30 @@
+---
+layout: post
+star: false
+; projects: true
+; category: projects
+category: blog
+image: 
+headerImage: false
+
+title: "文章标题"
+date: 2018-09-28
+author: dawsonlee
+tag:
+- tagName
+
+---
+
+  [1]: /gradle.png
+
+## Spring Data Jpa
+
+当使用kotlin创建@Entity的DTO时，由于kotlin自身机制的原因：有了主构造函数之后就不会创建默认的构造函数了
+
+#### 解决方法
+
+项目中使用kotlin-jpa插件（gradle和maven都可以）
+
+build.gradle
+
+![gradle][1]
