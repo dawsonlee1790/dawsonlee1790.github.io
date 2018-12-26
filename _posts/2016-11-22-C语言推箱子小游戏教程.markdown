@@ -982,13 +982,13 @@ void move(char get, int map[13][16], int &man_i, int &man_j)
  
 *  源码版本
     *  [View on GitHub][github-view-master]
-    *  [GitHub Download .zip][baiduyun-master]
+    *  [GitHub Download .zip][download-zip-master]
 
 *  Release版本（可执行文件 .exe）
     *  [百度云][baiduyun-master]
 
   [github-view-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/tree/master  "master分支"
-  [baiduyun-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zipball/master "master分支zip下载"
+  [download-zip-master]:  https://github.com/dawsonlee1790/GreatSageEquallingHeaven/zip/master "master分支zip下载"
   [baiduyun-master]:  http://pan.baidu.com/s/1o8EWOBo
   
 #### 项目展示视频：
