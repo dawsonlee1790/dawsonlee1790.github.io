@@ -20,7 +20,7 @@ tag:
   
 ## DTO
     
-{% highlight c++ %}
+{% highlight kotlin %}
 package dawsonlee1790.springboot_validation_kotlin_demo.dto
 
 import javax.validation.constraints.Max
