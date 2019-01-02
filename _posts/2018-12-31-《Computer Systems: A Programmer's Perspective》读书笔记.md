@@ -38,8 +38,7 @@ tag:
 * 在unix系统上，从源文件到可执行目标文件（executable object file）是由编译器驱动程序（compiler driver）
 完成的
 
-    
-    unix> gcc -o hello hello.c
+        unix> gcc -o hello hello.c
     
 上述过程是gcc读取源程序文件hello.c，并翻译成可执行目标文件hello。这个翻译过程是分四个阶段完成的。
 
