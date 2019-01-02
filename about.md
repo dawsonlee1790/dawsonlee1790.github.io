@@ -36,11 +36,13 @@ What makes me unique? I'm a man who loves to watch Korean dramas.
 ## 读完书单
 
 * 《编写有效用例》(美) Alistair Cockburn
+* 《Applying UML and Patterns》Craig Larman
+* 《Java EE开发的颠覆者：Spring Boot实战》汪云飞
 
 ## 在读书单
 
-* 《Applying UML and Patterns》Craig Larman
-* 《Java EE开发的颠覆者：Spring Boot实战》汪云飞
+* 《Computer Systems: A Programmer's Perspective》（美）Randal E.Bryant, David R.O'Hallaron 
+
 
 ## 计划书单
 
