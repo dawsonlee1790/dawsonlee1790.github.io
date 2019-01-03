@@ -8,7 +8,7 @@ image:
 headerImage: false
 
 title: "《Computer Systems: A Programmer's Perspective》读书笔记"
-date: 2018-12-31
+date: 2018-01-03
 author: dawsonlee
 tag:
 - 读书笔记
@@ -22,7 +22,12 @@ tag:
   [5]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-操作系统提供的抽象表示.png
   [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
   [7]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的虚拟地址空间.png
-  [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
+  [8]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-进制对照表.png
+  [9]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-大端法和小端法.png
+  [10]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-生成一张ascii表.png
+  [11]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-布尔运算.png
+  [12]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-位向量.png
+  [13]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-子集.png
   [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
   [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
 
@@ -121,4 +126,90 @@ tag:
 
 ## Chapter 2 信息的表示和处理
 
+![进制对照表][8]
 
+* 字长（word size）
+    * 指明整数和指针数据的标示大小（nominol size）
+    * 对32位计算机来说，程序最多访问2^32字节，这就限制了虚拟地址空间为4GB
+
+#### 2.1.4 寻址和字节顺序
+
+* 小端法（little endian）
+
+* 大端法（big endian）
+
+![大端法和小端法][9]
+
+#### 2.1.5 表示字符串
+
+* C中的字符串为一个以null（其值为零）字符结尾的字符数组
+
+* 文本数据比二进制数据具有更强的平台独立性
+    * 原因：对使用同一编码格式（例：ASCII码）的任意系统得到的数据结果都是一样的，与字节顺序和字大小规则无关
+    
+* 生成异常ascii码表
+
+
+    unix> man ascii
+    
+![生成一张ascii表][10]
+
+
+* java使用unicode来表示字符串
+
+#### 2.1.6 
+
+* 二进制代码很少能在不同的机器和操作系统之间移植
+
+* 程序仅仅只是二进制序列
+
+
+#### 2.1.7 布尔代数和环（！！！）
+
+* 二进制值是计算机编码、存储和操作信息的核心
+
+* 布尔代数（bool algebra）
+    * 起源：1850年左右乔治布尔（George Boole）的工作
+
+![布尔运算][11]
+
+
+* 整数环：`<Z, +, *, -, 0, 1>`
+* 布尔代数：`<{0,1}, |, &, ~, 0, 1>`
+* 整数环和布尔代数这两种数据结构大体上相同，但也有一些关键点不同，尤其是在`-`和`~`之间
+* 布尔环：`<{0,1}, ^, &, /,>`
+    * `/`：同一运算（identity operation）
+    
+> 练习题2.8
+~a = 10010110
+~b = 10101010
+a & b = 01000001
+a | b = 01111101
+a ^ b = 00111100
+
+* 位向量：![位向量][12]
+    * 可以用向量表示任何子集![子集][13]
+
+> 练习题2.9
+A. 
+黑 <-> 白
+蓝 <-> 黄
+绿 <-> 红紫
+蓝绿 <-> 红
+B.
+???
+C.
+101
+001
+101
+
+#### 2.1.8 C中的位级运算
+
+> 练习题2.10 ???
+第一步：*x = a^b , *y = b
+第二步：*x = a^b , *y = a
+第三步：*x = b , *y = a
+
+> 练习题2.12
+x|m
+x&m
