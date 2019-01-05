@@ -28,9 +28,16 @@ tag:
   [11]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-布尔运算.png
   [12]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-位向量.png
   [13]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-子集.png
-  [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
+  [14]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-无符号二进制.png
+  [15]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/2-二进制和二进制补码.png
+  [16]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P64页错误.png
+  [17]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P64-T2U.png
+  [18]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P64-二进制补码到无符号数的转换.png
   [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
 
+## 书中存在的错误
+* P64页：![P64页错误][16]
+    * 两个等号之间的括号中的减号应该改为加号
 
 ## 简介
 
@@ -213,3 +220,70 @@ C.
 > 练习题2.12
 x|m
 x&m
+
+#### 2.1.9 C中的逻辑运算
+
+    &&, ||, !
+    
+> 练习题2.14
+!(x^y)
+
+#### 2.1.10 C中的移位运算
+
+    <<, >>
+
+* `>>`:右移运算
+    * 一般而言系统支持两种方式的右移运算
+        * 逻辑右移：往左边补0
+        * 算术右移：在左边补最高有效位的拷贝
+            * 算术右移对有符号整数数据的运算非常有用
+    * 一般而言：无符号（unsigned）整数必须使用逻辑右移，有符号整数使用算术右移
+
+#### 2.2 整数表示
+
+* C支持多种整形数据类型——表示有限范围的整数
+    * char
+    * short
+    * int
+    * long
+    
+* C/C++中支持无符号数和有符号数，Java只支持有符号数
+
+* 有符号数的计算机表示：**二进制补码**（two's-complement）
+
+* 无符号二进制![][14]
+
+* 二进制到二进制补码![][15]
+
+* 历史上存在过的有符号编码
+    * 二进制反码
+    * 符号数值
+    
+* 强制类型转换没有改变位的表示，改变的只是解释位的方式
+
+> 练习题2.18
+    * -8 = 8
+    * -6 = 10
+    * -4 = 12
+    * -1 = 15
+    * 0 = 0         
+    * 3 = 3
+    
+#### 2.2.3 有符号和无符号数之间的转换(!!!)
+
+* T2U中的T为Two's-complement,U为Unsigned
+
+![P64-T2U.png][17]
+
+![P64-二进制补码到无符号数的转换][18]
+
+#### 2.2.4 C中的有符号与无符号数
+
+* 显示强制转换
+* 隐示强制转换
+
+* 由于C同时包含有符号和无符号数的表达式的处理方式，会出现一些奇特的行为
+    * 一个运算，有一个运算数是无符号的，另一个运算数是有符号的，那么C会隐示地将有符号参数强制转换为无符号数
+
+
+
