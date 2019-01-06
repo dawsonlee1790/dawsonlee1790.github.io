@@ -33,11 +33,13 @@ tag:
   [16]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P64页错误.png
   [17]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P64-T2U.png
   [18]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P64-二进制补码到无符号数的转换.png
-  [6]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/1-进程的上下文切换.png
+  [19]: /assets/posts/2018-12-31-《Computer Systems: A Programmer's Perspective》读书笔记/P67错误.png
 
 ## 书中存在的错误
 * P64页：![P64页错误][16]
     * 两个等号之间的括号中的减号应该改为加号
+* P67：红框我猜测是偏离了出题的原意，原意应该是-2147483647
+    * ![P67错误][19]
 
 ## 简介
 
@@ -285,5 +287,11 @@ x&m
 * 由于C同时包含有符号和无符号数的表达式的处理方式，会出现一些奇特的行为
     * 一个运算，有一个运算数是无符号的，另一个运算数是有符号的，那么C会隐示地将有符号参数强制转换为无符号数
 
+> 练习题：2.20
+    * 无符号 1
+    * 有符号 0 (-2147483648在32位机器上会溢出，但会被机器识别成什么数字呢？)
+    * 无符号 0
+    * 有符号 1
+    * 无符号 1
 
 
