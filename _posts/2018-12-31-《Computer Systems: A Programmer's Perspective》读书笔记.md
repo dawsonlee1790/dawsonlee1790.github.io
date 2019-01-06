@@ -16,24 +16,24 @@ tag:
 ---
 
   [1]: /assets/books/深入理解计算机系统.pdf
-  [2]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/1-编译系统.png
-  [3]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/1-存储器层次模型.png
-  [4]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/1-计算机系统分层模型.png
-  [5]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/1-操作系统提供的抽象表示.png
-  [6]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/1-进程的上下文切换.png
-  [7]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/1-进程的虚拟地址空间.png
-  [8]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-进制对照表.png
-  [9]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-大端法和小端法.png
-  [10]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-生成一张ascii表.png
-  [11]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-布尔运算.png
-  [12]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-位向量.png
-  [13]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-子集.png
-  [14]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-无符号二进制.png
-  [15]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/2-二进制和二进制补码.png
-  [16]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/P64页错误.png
-  [17]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/P64-T2U.png
-  [18]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/P64-二进制补码到无符号数的转换.png
-  [19]: /assets/posts/2018-12-31-《Computer_Systems:_A_Programmer's_Perspective》读书笔记/P67错误.png
+  [2]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-编译系统.png
+  [3]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-存储器层次模型.png
+  [4]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-计算机系统分层模型.png
+  [5]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-操作系统提供的抽象表示.png
+  [6]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-进程的上下文切换.png
+  [7]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-进程的虚拟地址空间.png
+  [8]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-进制对照表.png
+  [9]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-大端法和小端法.png
+  [10]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-生成一张ascii表.png
+  [11]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-布尔运算.png
+  [12]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-位向量.png
+  [13]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-子集.png
+  [14]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-无符号二进制.png
+  [15]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-二进制和二进制补码.png
+  [16]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64页错误.png
+  [17]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64-T2U.png
+  [18]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64-二进制补码到无符号数的转换.png
+  [19]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P67错误.png
 
 ## 书中存在的错误
 * P64页：![P64页错误][16]
