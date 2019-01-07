@@ -15,7 +15,7 @@ tag:
 
 ---
 
-  [1]: /assets/books/深入理解计算机系统.pdf
+  [1]: https://pan.baidu.com/s/1ty54ze88ZfPwFOKCaf3GPw
   [2]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-编译系统.png
   [3]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-存储器层次模型.png
   [4]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-计算机系统分层模型.png
@@ -30,20 +30,15 @@ tag:
   [13]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-子集.png
   [14]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-无符号二进制.png
   [15]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-二进制和二进制补码.png
-  [16]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64页错误.png
   [17]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64-T2U.png
   [18]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64-二进制补码到无符号数的转换.png
-  [19]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P67错误.png
 
 ## 书中存在的错误
-* P64页：![P64页错误][16]
-    * 两个等号之间的括号中的减号应该改为加号
-* P67：红框我猜测是偏离了出题的原意，原意应该是-2147483647
-    * ![P67错误][19]
 
 ## 简介
 
 我读的是《Computer Systems:A programmer's Perspective》的中文翻译版[《深入理解计算机系统》][1]
+    * 密码:`3hrt`
 
 ## Chapter 1: 计算机系统漫游
 
@@ -141,7 +136,7 @@ tag:
     * 指明整数和指针数据的标示大小（nominol size）
     * 对32位计算机来说，程序最多访问2^32字节，这就限制了虚拟地址空间为4GB
 
-#### 2.1.4 寻址和字节顺序
+#### 2.1.3 寻址和字节顺序
 
 * 小端法（little endian）
 
@@ -149,7 +144,7 @@ tag:
 
 ![大端法和小端法][9]
 
-#### 2.1.5 表示字符串
+#### 2.1.4 表示字符串
 
 * C中的字符串为一个以null（其值为零）字符结尾的字符数组
 
@@ -166,14 +161,14 @@ tag:
 
 * java使用unicode来表示字符串
 
-#### 2.1.6 
+#### 2.1.5 表示代码 
 
 * 二进制代码很少能在不同的机器和操作系统之间移植
 
 * 程序仅仅只是二进制序列
 
 
-#### 2.1.7 布尔代数和环（！！！）
+#### 2.1.6 布尔代数和环（！！！）
 
 * 二进制值是计算机编码、存储和操作信息的核心
 
@@ -212,7 +207,7 @@ C.
 001
 101
 
-#### 2.1.8 C中的位级运算
+#### 2.1.7 C中的位级运算
 
 > 练习题2.10 ???
 第一步：*x = a^b , *y = b
@@ -223,14 +218,14 @@ C.
 x|m
 x&m
 
-#### 2.1.9 C中的逻辑运算
+#### 2.1.8 C中的逻辑运算
 
     &&, ||, !
     
 > 练习题2.14
 !(x^y)
 
-#### 2.1.10 C中的移位运算
+#### 2.1.9 C中的移位运算
 
     <<, >>
 
@@ -274,7 +269,9 @@ x&m
     * 0 = 0         
     * 3 = 3
     
-#### 2.2.3 有符号和无符号数之间的转换(!!!)
+#### 2.2.3 补码编码
+    
+#### 2.2.4 有符号和无符号数之间的转换(!!!)
 
 * T2U中的T为Two's-complement,U为Unsigned
 
@@ -282,7 +279,7 @@ x&m
 
 ![P64-二进制补码到无符号数的转换][18]
 
-#### 2.2.4 C中的有符号与无符号数
+#### 2.2.5 C中的有符号与无符号数
 
 * 显示强制转换
 * 隐示强制转换
@@ -297,7 +294,7 @@ x&m
     * 有符号 1
     * 无符号 1
 
-#### 2.2.5 拓展一个数字的位表示
+#### 2.2.6 拓展一个数字的位表示
 
 * 零拓展（zero extension）
     * 将一个无符号整数拓展成一个更大的数据类型，高位补0
@@ -310,9 +307,30 @@ x&m
     * 128, -128
     * 255, -1
     * 0, 0
+    
+#### 2.2.7 截断数字
 
+* `B2U_k([X_k-1, X_k-2, ..., X_0]) = B2U_w([X_w-1, X_w-2, ..., X_0]) mod 2^k`
+* `B2T_k([X_k-1, X_k-2, ..., X_0]) = U2T_k(B2U_w([X_w-1, X_w-2, ..., X_0])) mod 2^k`
 
+#### 2.2.8 关于有符号数和无符号数的建议
 
+> 练习题 2.25 
+    * 因为length - 1，当无符号数和有符号数进行运算时，机器自动将有符号数强制类型转换为无符号数，
+    这就会造成length - 1 != 0，而是UMax_w
+    * 修改为 (int)length - 1
+
+> 练习题 2.26
+    * 当s<t时 ？？？
+
+* 事实上除了C以外很少有语言支持无符号数
+    * Java中`>>`表示算术右移，`>>>`表示逻辑右移
+
+### 2.3 整数运算
+
+#### 2.3.1 无符号加法
+
+* 大部分编程语言支持固定精度的运算，少部分编程语言支持无精度运算
 
 
 
