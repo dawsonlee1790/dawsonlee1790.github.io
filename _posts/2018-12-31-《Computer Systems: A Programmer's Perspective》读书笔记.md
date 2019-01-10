@@ -19,7 +19,7 @@ tag:
   [2]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-编译系统.png
   [3]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-存储器层次模型.png
   [4]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-计算机系统分层模型.png
-  [5]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-操作系统提供的抽象表示.png
+  [5]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P55计算机系统提供的一些抽象表示.png
   [6]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-进程的上下文切换.png
   [7]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/1-进程的虚拟地址空间.png
   [8]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-进制对照表.png
@@ -32,8 +32,20 @@ tag:
   [15]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/2-二进制和二进制补码.png
   [17]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64-T2U.png
   [18]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P64-二进制补码到无符号数的转换.png
+  [19]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P114单精度浮点数值.png
+  [20]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P150不理解的地方.png
+  [21]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P155C语言数据类型在x86-64中的大小.png
+  [22]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200运行时栈.png
+  [23]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200错误.png
+  [P173]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P173-SET指令.png
+
 
 ## 书中存在的错误
+
+* P150错误：![][20]
+    * 应该是256TB
+* P200错误：![][23]
+    * 应该是stack frame
 
 ## 简介
 
@@ -56,6 +68,9 @@ tag:
 预处理器（cpp）-> 编辑器（ccl）-> 汇编器（as）-> 链接器（ld）
 
 ![编译系统][2]
+
+* `.s`也称汇编文件
+* `.o`也称目标代码文件 
 
 * shell是一个命令行解释器（一个应用程序）
 
@@ -331,6 +346,186 @@ x&m
 #### 2.3.1 无符号加法
 
 * 大部分编程语言支持固定精度的运算，少部分编程语言支持无精度运算
+
+> 练习题2.27
+    
+* 模数加法形成了一种数学结构，称为阿贝尔群（Abelian group）
+    * 单位元0
+    * 每个元素有一个加法逆元
+    * 元素和它的加法逆元相加会等于单位元0
+
+> 练习题2.28
+    * 0, 0, 0
+    * 5, 11, B
+    * 8, 8, 8
+    * 13, 3, 3
+    * 15, 1, 1
+    
+#### 2.3.2 补码加法
+
+#### 2.3.3 补码的非
+
+> 练习题 2.33
+    * 0, 0, 0
+    * 5, 11, B
+    * 8, 8, 8
+    * 13, 3, 3
+    * 15, 1, 1
+    
+* 补码非的位级表示！！！
+    * 执行位级补码非的第一种方法是对每一位求补，再对结果加1
+        * 在C中，-x和~x+1结果是一样的
+    * 执行位级补码非的第二种方法是按从低位向高位的方向，将出现的第一个1**之后**的所有位求补
+    
+#### 2.3.4 无符号数乘法
+#### 2.3.5 补码的乘法
+#### 2.4.2 IEEE浮点表示
+
+标准：`V = (-1)^s * M * 2^E
+
+* 符号（sign）
+* 尾数（significand）
+* 阶码（exponent）
+
+* 单精度格式
+
+![单精度格式][19]
+
+## Chapter3 程序的机器级表达
+
+* 每个后继处理器的设计都是向后兼容的
+
+* 摩尔定律
+    * 半导体工业一直能使晶体管的数量每18个月翻一倍
+    
+#### 3.2.1 机器级代码
+
+* 机器级编程有两种抽象特别重要
+    * 第一种抽象：指令集架构（Instruction Set Architecture）
+    * 第二种抽象：机器级程序使用的内存地址是虚拟地址
+
+* x86-64的虚拟地址是64位的字
+    * 在目前的实现中，高16位必须设为0。所以一个地址实际上能够指定的是2^48或64TB范围内的一个字节
+    
+* 程序计数器（通常称"PC"，在x86-64中用%rip表示）
+    
+
+#### 3.2 程序编码
+
+
+* `linux> gcc -Og -o p p1.c p2.c`使用Og等级的优化将`p1.c`和`p2.c`翻译成可执行文件p
+     * `Og`优化等级是GCC版本4.8之后引入的
+     * `Og`优化等级是指编译器会生成符合原始C代码整体结构的机器代码的优化等级
+        * 较高级别的优化产生的代码会严重变形
+
+* `linux> gcc -Og -S mstore.c`使用Og等级的优化将`mstore.c`翻译成名为`mstore.s`的汇编文件
+
+* `linux> gcc -Og -c mstore.c`使用Og等级的优化将`mstore.c`翻译成名为`mstore.o`的目标代码文件
+    
+* `linux> objdump -d mstore.o`反汇编器`objdump`将`mstore.o`目标代码文件反汇编成`mstore.s`汇编文件
+
+* 旁注：ATT与Intel汇编代码格式
+    * ATT是GCC、OBJDUMP和其他一些我们使用的工具的默认格式
+    
+#### 3.3 数据格式
+
+![C语言数据类型在x86-64中的大小][21]
+
+* 在64为机器中，指针长8字节！！！
+
+#### 3.4 访问信息
+
+* 整数寄存器
+
+* 对于生成小于8字节结果的指令有相对应的两条规则
+    * 生成1字节和2字节数字的指令会保持剩下的字节不变
+    * 生成4字节数字的指令会把高位4个字节置为零
+    
+#### 3.4.1 操作数指示符
+
+* 大多数指令有一个或多个操作数（operand）
+
+* x86-64支持多种操作数格式
+    * 立即数（immediate）：用来表示常数值
+    * 寄存器（register）：表示某个寄存器的内容
+    * 内存引用：它会根据计算出来的**有效地址**访问某个内存位置
+    
+#### 3.4.2 数据传递指令
+
+* x86-64加了一条限制，传送指令的两个操作数不能都指向内存位置
+    * 将一个值从一个内存位置复制到另一个内存位置需要两条指令
+    
+#### 3.4.3 数据传送示例
+
+#### 3.4.4 压入和弹出栈数据
+
+#### 3.5 算术和逻辑操作
+
+#### 3.5.1 加载有效地址（load effective address）
+
+#### 3.5.2 一元和二元操作
+
+#### 3.5.3 移位操作
+
+* 移位量可以是一个立即数（immediate），或者放在单字节寄存器%c1中。（这些指令很特别，
+因为只允许以这个特殊的寄存器%c1作为操作数）
+
+* 原则上来说一个字节的偏移量范围应该是 0 ～ 255 = 2^8 - 1。但在x86-64中，移位操作对w位长的数据值进行操作，
+只会对低m位有效（2^m = w）。例如：指令salb会移7位，salw会移15位，sall会移31位，salq会移63位。
+
+#### 3.5.5 特殊的算术操作
+
+#### 3.6 控制
+
+用jump指令可以改变程序运行的顺序，指令可能依赖于某一次测试的值。编译器必须产生构建在这种低级机制的指令序列，
+来控制C语言的控制结构
+
+#### 3.6.1 条件码
+
+* 除了整数寄存器，CPU还维护着一组单个位的条件码（condition code）
+
+* 最常用的条件码有
+    * CF：进位标志
+    * ZF：零标志
+    * SF：符号标志
+    * OF：溢出标志
+
+* 两类指令：`CMP`和`TEST`指令，只会设置条件码（condition code）的值，不会更新寄存器中的值
+
+#### 3.6.2 访问条件码
+
+条件码（condition code）一般不会直接读取，它一般有三种使用方式
+
+1. 根据条件码的某种组合，将一个字节设为0或1
+2. 可以条件跳转到程序的某个其他的部分
+3. 可以有条件的传输数据
+
+![][P173]
+
+#### 3.6.3 跳转（jump）指令
+
+* `jmp`指令是无条件跳转
+    * 直接跳转：即跳转目标是作为指令的一部分编码的
+        * 例：`jmp .L1`
+    * 间接跳转：从寄存器或内存位置中读出的
+        * `jmp *%rax` : 用寄存器中的值作为跳转目标
+        * `jmp *(%rax)`: 根据寄存器的值作为地址，从内存中读出跳转目标
+        
+#### 3.6.4 跳转指令的编码
+
+#### 3.7 过程
+
+#### 3.7.1 运行时栈
+
+![运行时栈][22]
+
+* 栈帧（stack frame）
+
+
+
+
+
+
 
 
 
