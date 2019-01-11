@@ -37,9 +37,10 @@ tag:
   [21]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P155C语言数据类型在x86-64中的大小.png
   [22]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200运行时栈.png
   [23]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200错误.png
+  [P165]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165整数算术操作.png
   [P173]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P173-SET指令.png
   [P176]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P176页错误.png
-  
+ 
 
 ## 书中存在的错误
 
@@ -467,6 +468,11 @@ x&m
 
 #### 3.5 算术和逻辑操作
 
+P165整数算术操作
+
+* `leaq`：加载有效地址
+
+
 #### 3.5.1 加载有效地址（load effective address）
 
 #### 3.5.2 一元和二元操作
@@ -540,6 +546,8 @@ x&m
 但不是所有条件表达式都可以用条件传送来编译
 
 GCC只有当分支中是两条加法的时候会使用条件传送，大部分情况下都会使用条件控制，虽然预测错误的开销很大
+
+
 
 #### 3.7 过程
 
