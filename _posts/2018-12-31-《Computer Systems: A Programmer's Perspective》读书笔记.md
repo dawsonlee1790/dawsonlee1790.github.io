@@ -38,6 +38,9 @@ tag:
   [22]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200运行时栈.png
   [23]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200错误.png
   [P165]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165整数算术操作.png
+  [P165-error]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165错误.png
+  [P165-error2]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165错误2.png
+  [P165-error2-evidence]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165错误2.png 
   [P173]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P173-SET指令.png
   [P176]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P176页错误.png
  
@@ -46,6 +49,12 @@ tag:
 
 * P150页（书本：114页）错误：![][20]
     * 应该是256TB
+* P165页（书本：129页）错误：
+    * 这里的操作顺序和ATT格式的汇编代码相反？应该是相同的吧
+    * ![][P165-error]
+* P65页（书本：129页）错误：![][P165-error2]
+    * 红线部分：寄存器%rax的值应该是4x+7吧
+    * 证据：![][P165-error2-evidence]
 * P176页（书本：140页）错误：
     * 红线标注部分应该是32位机器的内容，x86-64使用的应该是48位长的虚拟地址长度
     * 所以应该改为，1，2，4或8字节，然后使用8个字节直接指定目标（？？？我也不确定正确应该是怎样）
@@ -470,7 +479,9 @@ x&m
 
 ![P165整数算术操作][P165]
 
-* `leaq`：加载有效地址
+* `leaq`：加载有效地址（load effective address）
+    * 实际上是`movq`指令的变形
+    * 它的第一个操作数看上去是一个内存引用，但实际上它并没从指定的位置读入数据，而是将有效地址写入到目的操作数
 
 
 #### 3.5.1 加载有效地址（load effective address）
