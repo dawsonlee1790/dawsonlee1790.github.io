@@ -37,6 +37,7 @@ tag:
   [21]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P155C语言数据类型在x86-64中的大小.png
   [22]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200运行时栈.png
   [23]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P200错误.png
+  [P157]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P157操作数格式.png
   [P165]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165整数算术操作.png
   [P165-error]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165错误.png
   [P165-error2]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165错误2.png
@@ -66,7 +67,8 @@ tag:
 ## 简介
 
 我读的是《Computer Systems:A programmer's Perspective》的中文翻译版[《深入理解计算机系统》][1]
-    * 密码:`3hrt`
+    
+* 密码:`3hrt`
 
 ## Chapter 1: 计算机系统漫游
 
@@ -466,6 +468,8 @@ x&m
     * 寄存器（register）：表示某个寄存器的内容
     * 内存引用：它会根据计算出来的**有效地址**访问某个内存位置
     
+![操作数格式][P157]
+    
 #### 3.4.2 数据传递指令
 
 * x86-64加了一条限制，传送指令的两个操作数不能都指向内存位置
@@ -479,12 +483,12 @@ x&m
 
 ![P165整数算术操作][P165]
 
+#### 3.5.1 加载有效地址（load effective address）
+
 * `leaq`：加载有效地址（load effective address）
     * 实际上是`movq`指令的变形
     * 它的第一个操作数看上去是一个内存引用，但实际上它并没从指定的位置读入数据，而是将有效地址写入到目的操作数
 
-
-#### 3.5.1 加载有效地址（load effective address）
 
 #### 3.5.2 一元和二元操作
 
@@ -558,6 +562,13 @@ x&m
 
 GCC只有当分支中是两条加法的时候会使用条件传送，大部分情况下都会使用条件控制，虽然预测错误的开销很大
 
+#### 3.6.7 循环
+
+> 练习题3.23
+
+> A. x -> %rdi, y -> %rcx, n -> %rdx
+
+> B. 
 
 
 #### 3.7 过程
