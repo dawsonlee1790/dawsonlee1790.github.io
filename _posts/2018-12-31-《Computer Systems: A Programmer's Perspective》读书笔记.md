@@ -42,7 +42,10 @@ tag:
   [P165-error]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P165错误.png
   [P173]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P173-SET指令.png
   [P176]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P176页错误.png
- 
+  [P188]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P188-jump_to_middle.png
+  [P190]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P190-guarded-do翻译方法.png
+  [P192]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P192-for循环.png
+
 
 ## 书中存在的错误
 
@@ -562,6 +565,8 @@ GCC只有当分支中是两条加法的时候会使用条件传送，大部分�
 
 #### 3.6.7 循环
 
+* 1.do-while循环
+
 > 练习题3.23
 
 > A. x -> %rdi, y -> %rcx, n -> %rdx
@@ -573,7 +578,34 @@ GCC只有当分支中是两条加法的时候会使用条件传送，大部分�
      第7行：`compute x += y ; (*p)++`
      第9行：`compare n:n`
      第10行：`If n>0, goto .L2`
-     
+ 
+* 2.while循环
+
+第一种翻译方法：jump to middle
+
+![jump to middle][P188]
+
+第二种翻译方法：guarded-do
+
+![guarded-do][P190]
+
+* 3.for循环
+
+C语言标准说明，for循环与while循环的代码行为一样（有一个例外，使用continue时）
+
+![for循环][P192]
+
+#### 3.6.8 switch语句
+
+* 多重分支（multiway switch）
+
+* 跳转表（jump table）
+
+* 标号（case label）
+
+* C语言中`&`运算符创建一个指向数据值的指针
+* C语言中`&&`运算符创建一个指向代码位置的指针
+
 #### 3.7 过程
 
 #### 3.7.1 运行时栈
