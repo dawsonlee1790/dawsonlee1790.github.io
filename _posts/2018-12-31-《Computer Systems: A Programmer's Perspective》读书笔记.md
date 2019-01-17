@@ -48,6 +48,10 @@ tag:
   [P204]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P204-传递函数参数的寄存器.png
   [P503]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P503-典型的ELF可重定位目标文件.png
   [P521]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P521-Linux%20x86-64运行时内存映像.png
+  [P522]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P522-动态链接过程.png
+  [P539]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P539-生成异常处理程序的地址.png
+  [P540]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P540-异常的类型.png
+  [P541]: /assets/posts/2018-12-31-Computer_Systems_A_Programmer's_Perspective_读书笔记/P541-故障处理.png
 
 
 ## 书中存在的错误
@@ -803,5 +807,130 @@ ELF定义了32种不同的重定位类型，我们只关注最基本的两种
 
 ![Linux x86-64运行时内存映射][P521]
 
+#### 7.10 动态链接共享库
+
+静态库缺陷：
+1. 静态库和所有软件一样需要定期维护和更新
+2. 几乎每个C语言程序都使用标准的I/O函数，比如`printf`和`scanf`，在运行时，这些函数的代码会被复制到每个
+运行进程的文本段中，在一个运行上百个进程的典型系统上，对稀缺的内存资源来说是极大的浪费。
+
+共享库（shared library）是解决静态库缺陷的一个现代创新产物
+
+共享库是一个目标模块，在运行和加载时，可以加载到任意的内存地址，并和一个在内存中的程序链接起来。这个过程叫做
+**动态链接**（dynamic linking），是由一个动态链接器（dynamic linker）的程序来执行的。共享库也称共享目标，
+在linux中一般使用`.so`后缀表示，在windows中成为`DLL`（动态链接库）
+
+![动态链接过程][P522]
+
+动态链接器通过执行下面的重定位完成链接任务
+* 重定位libc.so的文本和数据到某个内存段
+* 重定位libvector.so的文本和数据到另一个内存段
+* 重定位prog21中所有对由libc.so和libvector.so定义的符号的引用
+最后，动态链接器将控制传递给应用程序。
+
+#### 7.11 从应用程序中加载和链接共享库
+
+#### 7.12 位置无关代码
+
+多个进程如何共享程序的一个副本？
+
+可以加载而无需重定位的代码称为**位置无关代码**（Position-Independent Code，PIC）
+
+
+1. PIC数据引用
+    * 全局偏移量表（Global Offset Table，GOF）
+2. PIC函数调用
+    * **延迟绑定**（lazy binding），将过程地址绑定推迟到第一次调用该过程时
+    * 延迟绑定是通过两个数据结构之间简洁但又有些复杂的交互来实现的
+        * GOT：数据段的一部分
+        * 过程链接表（Procedure Linkage Table，PLT）：代码段的一部分
+
+![用PLT和GOF调用外部函数][P527]
+
+#### 7.13 库打桩机制（library interpositioning）
+
+
+## Chapter 8：异常控制流
+
+* 控制转移（control transfer）
+* 控制流（control flow）
+* 异常控制流（Exceptional Control Flow，ECF）
+    * 异常控制流会发生在计算机系统的各个层次。
+        * 在硬件层，硬件检测到的事件会触发控制突然转移到异常处理流。
+        * 在操作系统层，内核通过上下文切换将控制一个用户进程转移到另一个用户进程。
+        * 在应用层，一个进程可以发送信号到另一个进程，而接受者会将控制突然转移到它的一个信号处理程序。
+    
+作为程序员理解ECF（Exceptional Control Flow）非常重要，原因如下：
+
+* 理解ECF将帮助你理解重要的系统概念
+* 理解ECF将帮助你理解应用程序是如何与操作系统交互的
+* 理解ECF将帮助你编写有趣的新应用程序
+* 理解ECF将帮助你理解并发
+* 理解ECF将帮助你理解软件异常是如何工作。软件异常允许程序进行**非本地跳转**来响应错误情况
+
+#### 8.1 异常
+
+异常是异常控制流的一种形式，它一部分由硬件实现，一部分由操作系统实现。
+
+状态变化称为**事件**（event）
+
+#### 8.1.1 异常处理
+
+**异常表**的起始地址放在一个叫做**异常表基址寄存器**（exception table base register）的特殊CPU寄存器里
+
+![生成异常处理程序的地址][P539]
+
+#### 8.1.2 异常的类别
+
+异常可以分为四类：中断（interrupt）、陷阱（trap）、故障（fault）和终止（abort）。
+
+除了interrupt其他属于faulting instruction（故障指令）
+
+![异常的类型][P540]
+
+1.中断（interrupt）
+
+interrupt是异步的，是来自处理器外部的I/O设备的信号的结果。硬件终端不是由任何一条专门的指令造成的，从这个意义上
+来书interrupt是异步的。硬件interrupt的异常处理程序常常成为**中断处理程序**（interrupt handler）
+
+2.陷阱（trap）和系统调用（system call）
+
+从程序员的角度看，系统调用和普通函数调用是一样的。但并不完全相同，普通函数运行在**用户模式**中，系统调用
+运行在**内核模式**中
+
+3.故障（fault）
+
+故障是由错误引起的。
+
+![故障处理][P541]
+
+一个典型的fault示例是缺页异常，当指令引用一个虚拟地址，而与该地址相对应的物理页面不在内存中，因此必须从磁盘中
+取出时，就会发生fault。
+
+4.终止（abort）
+
+#### 8.1.3 Linux/x86-64系统中的异常
+
+1.Linux/x86-64故障和终止
+* 除法错误
+* 一般保护故障
+* 缺页
+* 机器检查
+
+2.Linux/x86-64系统调用
+
+#### 8.2 进程
+
+异常是允许操作系统内核提供进程（process）概念的基本构造块。process是计算机科学中最深刻、最成功的概念之一。
+
+进程的经典定义就是**一个执行中程序的实例**。系统的每个程序都运行在某个进程的**上下文**（context）中。
+
+我们关注进程提供给应用程序的关键抽象：
+* 一个独立的逻辑控制流，它提供一个假象，好像我们的进程独占地使用处理器
+* 一个私有的地址空间，它提供一个假象，好想我们的程序独占地使用内存系统
+
+#### 8.2.1 逻辑控制流
+
+抢占（preempted）（暂时挂起）
 
 
