@@ -7,7 +7,7 @@ category: blog
 image: 
 headerImage: false
 
-title: "《Computer Systems: A Programmer's Perspective》读书笔记"
+title: "Computer_Systems_A_Programmer's_Perspective_读书笔记"
 date: 2019-01-03
 author: dawsonlee
 tag:
