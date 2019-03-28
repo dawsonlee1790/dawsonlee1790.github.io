@@ -8,7 +8,7 @@ image:
 headerImage: false
 
 title: "《Growth Hacker》读书笔记"
-date: 2018-09-28
+date: 2019-01-02
 author: dawsonlee
 tag:
 - 读书笔记
