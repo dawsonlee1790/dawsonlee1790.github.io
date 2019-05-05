@@ -9,6 +9,6 @@ spec:
     type: LoadBalancer
     ports:
         - port: 3306
-          nodePort: 3306
+          nodePort: 32311
     selector:
         app: my-mysql
