@@ -5,9 +5,9 @@ metadata:
     labels:
         app: my-mysql
 spec:
-    type: NodePort
+#    type: NodePort
     ports:
         - port: 3306
-          nodePort: 3306
+#          nodePort: 3306
     selector:
         app: my-mysql
