@@ -5,8 +5,8 @@ metadata:
     labels:
         app: my-mysql
 spec:
-#    type: NodePort
-    type: LoadBalancer
+    type: NodePort
+#    type: LoadBalancer
     ports:
         - port: 3306
           nodePort: 32311
