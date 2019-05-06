@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+    namespace: "bupt-graduation-design"
     name: my-mysql
     labels:
         app: my-mysql
