@@ -40,7 +40,7 @@ metadata:
     labels:
         app: my-mysql-product
 spec:
-#    type: NodePort
+    type: NodePort
     #    type: LoadBalancer
     ports:
         - port: 3306
