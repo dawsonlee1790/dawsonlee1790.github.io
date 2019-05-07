@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    namespace: "bupt-graduation-design"
+    name: my-mysql-product
+    labels:
+        app: my-mysql-product
+spec:
+    selector:
+        matchLabels:
+            app: my-mysql-product
+    strategy:
+        type: RollingUpdate
+    template:
+        metadata:
+            labels:
+                app: my-mysql-product
+        spec:
+            containers:
+                - image: mysql:5.7
+                  name: my-mysql-product
+                  args:
+                      - "--character-set-server=utf8mb4"
+                      - "--collation-server=utf8mb4_unicode_ci"
+                    #                      - "--ignore-db-dir=lost+found"
+                  env:
+                      - name: MYSQL_ROOT_PASSWORD
+                        value: "12345"
+                  ports:
+                      - containerPort: 3306
+                        name: mysql
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    namespace: "bupt-graduation-design"
+    name: my-mysql-product
+    labels:
+        app: my-mysql-product
+spec:
+#    type: NodePort
+    #    type: LoadBalancer
+    ports:
+        - port: 3306
+    selector:
+        app: my-mysql-product
