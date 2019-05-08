@@ -8,7 +8,7 @@ metadata:
 #        nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
     rules:
-        - host: k8s.debugya.cn
+        - host: www.debugya.cn/user
           http:
               paths:
                   - path: /
