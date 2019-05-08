@@ -4,7 +4,7 @@ metadata:
     name: user-ingress
     namespace: bupt-graduation-design
     annotations:
-        nginx.ingress.kubernetes.io/ssl-redirect: "false"
+        nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
     rules:
         - host: www.debugya.cn
