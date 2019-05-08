@@ -4,10 +4,10 @@ metadata:
     name: user-debugya-cn
     namespace: bupt-graduation-design
     annotations:
-        nginx.ingress.kubernetes.io/rewrite-target: $2/
+        nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
     rules:
-        - host: user.debugya.cn(/|$)(.*)
+        - host: user.debugya.cn
           http:
               paths:
                   - path: /
