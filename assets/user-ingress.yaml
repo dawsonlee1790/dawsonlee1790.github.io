@@ -1,7 +1,7 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-    name: bupt-ingress
+    name: user-ingress
     namespace: bupt-graduation-design
     annotations:
         nginx.ingress.kubernetes.io/ssl-redirect: "false"
