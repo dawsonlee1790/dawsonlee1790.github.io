@@ -10,7 +10,7 @@ spec:
         - host: www.debugya.cn
           http:
               paths:
-                  - path: /user/
+                  - path: /user
                     backend:
                         serviceName: user
                         servicePort: 8080
