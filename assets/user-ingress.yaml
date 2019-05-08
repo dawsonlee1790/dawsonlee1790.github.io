@@ -3,14 +3,14 @@ kind: Ingress
 metadata:
     name: user-ingress
     namespace: bupt-graduation-design
-#    annotations:
-#        nginx.ingress.kubernetes.io/rewrite-target: /
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
     rules:
         - host: www.debugya.cn
           http:
               paths:
-                  - path: /user
+                  - path: /user(/|$)(.*)
                     backend:
                         serviceName: user
                         servicePort: 8080
