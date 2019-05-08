@@ -16,7 +16,7 @@ spec:
           protocol: TCP
         - name: https
           port: 443
-          nodePort: 300443
+          nodePort: 30443
           targetPort: 443
           protocol: TCP
     selector:
