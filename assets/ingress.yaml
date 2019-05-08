@@ -16,3 +16,13 @@ spec:
                     backend:
                         serviceName: user
                         servicePort: 8080
+        - https:
+              paths:
+                  - path: /kubernetes-dashboard
+                    backend:
+                        serviceName: kubernetes-dashboard
+                        servicePort: 443
+                  - path: /api/user
+                    backend:
+                        serviceName: user
+                        servicePort: 8080
