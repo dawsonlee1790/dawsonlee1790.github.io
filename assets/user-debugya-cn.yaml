@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: user-debugya-cn
+    namespace: bupt-graduation-design
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+    rules:
+        - host: user.debugya.cn
+          http:
+              paths:
+                  - path: /
+                    backend:
+                        serviceName: user
+                        servicePort: 8080
