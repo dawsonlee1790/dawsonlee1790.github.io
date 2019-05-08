@@ -8,10 +8,10 @@ metadata:
 #        nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
     rules:
-        - host: www.debugya.cn
+        - host: k8s.debugya.cn
           http:
               paths:
-                  - path: /user
+                  - path: /
                     backend:
                         serviceName: kubernetes-dashboard
                         servicePort: 443
