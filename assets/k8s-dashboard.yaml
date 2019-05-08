@@ -8,7 +8,8 @@ metadata:
         nginx.ingress.kubernetes.io/secure-backends: "true"
 spec:
     rules:
-        - http:
+        - host: k8s.debugya.cn
+          http:
               paths:
                   - path: /
                     backend:
