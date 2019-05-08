@@ -3,12 +3,12 @@ kind: Ingress
 metadata:
     name: kubernetes-dashboard
     namespace: kube-system
-    annotations:
-        nginx.ingress.kubernetes.io/ssl-redirect: "false"
-        nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+#    annotations:
+#        nginx.ingress.kubernetes.io/ssl-redirect: "false"
+#        nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
     rules:
-        - host: www.debugya.cn
+        - host: k8s.debugya.cn
           http:
               paths:
                   - path: /

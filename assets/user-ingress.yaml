@@ -7,9 +7,10 @@ metadata:
         nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
     rules:
-        - http:
+        - host: user.debugya.cn
+          http:
               paths:
-                  - path: /user/
+                  - path: /
                     backend:
                         serviceName: user
                         servicePort: 8080
