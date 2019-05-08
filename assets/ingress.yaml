@@ -4,7 +4,7 @@ metadata:
     name: bupt-ingress
 spec:
     rules:
-        - https:
+        - http:
               paths:
                   - path: /kubernetes-dashboard
                     backend:
