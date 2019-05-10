@@ -1,0 +1,61 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    namespace: bupt-graduation-design
+    name: user-product
+    labels:
+        app: user-product
+spec:
+    selector:
+        matchLabels:
+            app: user-product
+    strategy:
+        type: RollingUpdate
+    template:
+        metadata:
+            labels:
+                app: user-product
+        spec:
+            containers:
+                - image: dawsonlee1790/bupt-graduation-design-user:v2.0
+                  name: user-product
+                  args:
+                      - "--spring.profiles.active=product"
+                  ports:
+                      - containerPort: 8080
+                        name: user-product
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    namespace: bupt-graduation-design
+    name: user-product
+    labels:
+        app: user-product
+spec:
+    ports:
+        - port: 8080
+    selector:
+        app: user-product
+
+
+---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: user-product-ingress
+    namespace: bupt-graduation-design
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+    rules:
+        - host: user.debugya.cn
+          http:
+              paths:
+                  - path: /
+                    backend:
+                        serviceName: user-product
+                        servicePort: 8080
