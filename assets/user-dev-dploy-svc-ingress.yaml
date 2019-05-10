@@ -18,7 +18,7 @@ spec:
                 app: user-dev
         spec:
             containers:
-                - image: dawsonlee1790/bupt-graduation-design-user-dev:v2.0
+                - image: dawsonlee1790/bupt-graduation-design-user:v2.0
                   name: user-dev
                   args:
                       - "--spring.profiles.active=dev"
