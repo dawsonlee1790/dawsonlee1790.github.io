@@ -1,0 +1,62 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    namespace: bupt-graduation-design
+    name: sop-dev
+    labels:
+        app: sop-dev
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: sop-dev
+    strategy:
+        type: RollingUpdate
+    template:
+        metadata:
+            labels:
+                app: sop-dev
+        spec:
+            containers:
+                - image: dawsonlee1790/bupt-graduation-design-sop:v1.0
+                  name: sop-dev
+                  args:
+                      - "--spring.profiles.active=dev"
+                  ports:
+                      - containerPort: 8080
+                        name: sop-dev
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+    namespace: bupt-graduation-design
+    name: sop-dev
+    labels:
+        app: sop-dev
+spec:
+    ports:
+        - port: 8080
+    selector:
+        app: sop-dev
+
+
+---
+
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: sop-dev-ingress
+    namespace: bupt-graduation-design
+    annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+    rules:
+        - host: sop-dev.debugya.cn
+          http:
+              paths:
+                  - path: /
+                    backend:
+                        serviceName: sop-dev
+                        servicePort: 8080

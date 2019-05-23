@@ -1,0 +1,95 @@
+version: "3"
+services:
+  userApp:
+    # replace username/repo:tag with your name and image details
+    image: wangruijie815/user-microservice:v1.0
+    command: "--spring.profiles.active=update"
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+#      resources:
+#        limits:
+##          cpus: "0.2"
+#          memory: 100M
+    ports:
+      - "30000:8080"
+    networks:
+      - webnet
+  courseApp:
+    # replace username/repo:tag with your name and image details
+    image: wangruijie815/course-microservice:v1.0
+    command: --spring.profiles.active=update
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+#      resources:
+#        limits:
+##          cpus: "0.2"
+##          memory: 100M
+    ports:
+      - "30001:8080"
+    networks:
+      - webnet
+  chooseCourseApp:
+    # replace username/repo:tag with your name and image details
+    image: wangruijie815/choose-course-microservice:v1.0
+    command: --spring.profiles.active=update
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+#      resources:
+#        limits:
+##          cpus: "0.2"
+#          memory: 100M
+    ports:
+      - "30002:8080"
+    networks:
+      - webnet
+  commentApp:
+    # replace username/repo:tag with your name and image details
+    image: wangruijie815/comment-microservice:v1.0
+    command: --spring.profiles.active=update
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+#      resources:
+#        limits:
+##          cpus: "0.2"
+#          memory: 100M
+    ports:
+      - "30003:8080"
+    networks:
+      - webnet
+  noticeApp:
+    # replace username/repo:tag with your name and image details
+    image: wangruijie815/notice-microservice:v1.0
+    command: --spring.profiles.active=update
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+#      resources:
+#        limits:
+##          cpus: "0.2"
+#          memory: 100M
+    ports:
+      - "30004:8080"
+    networks:
+      - webnet
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+    networks:
+      - webnet
+networks:
+  webnet:
